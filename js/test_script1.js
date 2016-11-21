@@ -105,10 +105,10 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       else{
         abtHgt = abtHgtALT;
       }
-//      //fade out About Section
-//      $('.AboutSection').css({
-//        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
-//      });
+      //fade out About Section
+      $('.AboutSection').css({
+        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
+      });
 //      
 //      // fade out Artwork Section
 //      $('.ArtworkSection').css({             //height of abtHgt + artHgt
