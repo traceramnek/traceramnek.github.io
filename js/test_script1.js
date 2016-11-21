@@ -107,19 +107,19 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       }
       //fade out About Section
       $('.AboutSection').css({
-        'opacity': ( ( height - (scrollTop - abtHgt)  ) )
+        'opacity': ( ( height - (scrollTop - abtHgt)  ) / height )
       });
       
       // fade out Artwork Section
       $('.ArtworkSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (artHgt) )  )  )
+        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt) )  ) / height )
       }); 
 
-//      // fade out Projects Section
-//      $('.ProjectsSection').css({             //height of abtHgt + artHgt
-//        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt + projHgt) )  ) / (projHgt/10) )
-//      }); 
-//
+      // fade out Projects Section
+      $('.ProjectsSection').css({             //height of abtHgt + artHgt
+        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt + projHgt) )  ) / height) )
+      }); 
+
 //      $(".icon-menu").click(function() {
 //          $(".menu").fadeTo("fast",1);
 //      });
