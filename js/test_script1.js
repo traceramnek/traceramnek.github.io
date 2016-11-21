@@ -107,25 +107,22 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       }
       //fade out About Section
       $('.AboutSection').css({
-//        'opacity': ( ( height - (scrollTop - abtHgt)  ) / height )
-        'opacity': ((height - scrollTop) / abtHgt)
+        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
       });
       
       // fade out Artwork Section
       $('.ArtworkSection').css({             //height of abtHgt + artHgt
-//        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt) )  ) / height )
-        'opacity': ((height - scrollTop) / artHgt)
+        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt) )  ) / (artHgt/3) )
       }); 
 
-      // fade out Projects Section
+      // fade out Artwork Section
       $('.ProjectsSection').css({             //height of abtHgt + artHgt
-//        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt + projHgt) )  ) / height) )
-        'opacity': ((height - scrollTop) / projHgt)
+        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt + projHgt) )  ) / (projHgt/7) )
       }); 
 
-//      $(".icon-menu").click(function() {
-//          $(".menu").fadeTo("fast",1);
-//      });
+      $(".icon-menu").click(function() {
+          $(".menu").fadeTo("fast",1);
+      });
       
     }); //SCROLL END
 
