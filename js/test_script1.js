@@ -107,12 +107,12 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       }
       //fade out About Section
       $('.AboutSection').css({
-        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/10) )
+        'opacity': ( ( height - (scrollTop - abtHgt)  ) )
       });
       
       // fade out Artwork Section
       $('.ArtworkSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt) )  ) / (artHgt/7) )
+        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt) )  )  )
       }); 
 
 //      // fade out Projects Section
