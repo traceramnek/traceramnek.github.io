@@ -18,7 +18,6 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
     var topBtnOffset = 230;
     var fadeTime = 300;
     var duration = 300;
-    var fadeDivisor = 1000;
     var ExtraBioVisible = false;
     var OtherExpVisible = false;
     //used to disable parralax on mobile devices
@@ -108,17 +107,17 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       }
       //fade out About Section
       $('.AboutSection').css({
-        'opacity': ( ( height - (scrollTop - abtHgt)  ) / fadeDivisor )
+        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
       });
       
       // fade out Artwork Section
       $('.ArtworkSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt) )  ) / fadeDivisor )
+        'opacity': ( ( height - (scrollTop - (abtHgt - artHgt) )  ) / (artHgt/3) )
       }); 
 
       // fade out Artwork Section
       $('.ProjectsSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt + projHgt) )  ) / fadeDivisor )
+        'opacity': ( ( height - (scrollTop - (abtHgt - artHgt - projHgt) )  ) / (projHgt/7) )
       }); 
 
 //      $(".icon-menu").click(function() {
