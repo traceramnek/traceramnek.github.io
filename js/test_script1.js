@@ -89,22 +89,22 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
             $('.ToTopButton').css('opacity', 0);
       }
       
-      //NOTE: (ScrollTop - sectionHgt) gets the size of the div
-
-      //fade out Jumbotron
-      $('.jumbotron').css({
-        'opacity': ( ( height - scrollTop  ) / ( jumbHgt/3 ) )
-      }); 
-
-      scrollTop = $(window).scrollTop();
-      
-      // change value to correct fading of each section
-      if( ExtraBioVisible ){ 
-          abtHgt = abtHgtReg;
-      }
-      else{
-        abtHgt = abtHgtALT;
-      }
+//      //NOTE: (ScrollTop - sectionHgt) gets the size of the div
+//
+//      //fade out Jumbotron
+//      $('.jumbotron').css({
+//        'opacity': ( ( height - scrollTop  ) / ( jumbHgt/3 ) )
+//      }); 
+//
+//      scrollTop = $(window).scrollTop();
+//      
+//      // change value to correct fading of each section
+//      if( ExtraBioVisible ){ 
+//          abtHgt = abtHgtReg;
+//      }
+//      else{
+//        abtHgt = abtHgtALT;
+//      }
 //      //fade out About Section
 //      $('.AboutSection').css({
 //        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
