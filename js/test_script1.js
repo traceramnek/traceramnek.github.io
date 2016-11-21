@@ -117,7 +117,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
 
       // fade out Projects Section
       $('.ProjectsSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt + projHgt) )  ) / (projHgt/7) )
+        'opacity': ( ( height - (scrollTop - (abtHgt + artHgt + projHgt) )  ) / (projHgt/10) )
       }); 
 //
 //      $(".icon-menu").click(function() {
