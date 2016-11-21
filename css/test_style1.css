@@ -92,8 +92,10 @@ header a:hover, header a:active{
 }
 
 .blurBG{
+/*
     background:url('Images/USQ2016.jpg') no-repeat center;
     background-size:cover;
+*/
     /*-webkit-filter: blur(3px);
     -moz-filter: blur(3px);
     -o-filter: blur(3px);
@@ -109,9 +111,9 @@ header a:hover, header a:active{
 .jumbotron {
   display: flex;
   align-items: center;
-  /*background-image: url('/Users/kwanholloway/Downloads/IMAG0157.png'); 
+  background-image: url('Images/USQ2016.png'); 
   background-size: cover;
-  background-attachment: fixed;*/
+  background-attachment: fixed;
   color: #ffffff;
   height: 700px;
   margin-bottom: 60px;
