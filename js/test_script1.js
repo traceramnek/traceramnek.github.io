@@ -107,7 +107,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       }
       //fade out About Section
       $('.AboutSection').css({
-        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/3) )
+        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/8) )
       });
       
       // fade out Artwork Section
