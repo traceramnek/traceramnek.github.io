@@ -89,40 +89,40 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
             $('.ToTopButton').css('opacity', 0);
       }
       
-      //NOTE: (ScrollTop - sectionHgt) gets the size of the div
+//      //NOTE: (ScrollTop - sectionHgt) gets the size of the div
+//
+//      //fade out Jumbotron
+//      $('.jumbotron').css({
+//        'opacity': ( ( height - scrollTop  ) / ( jumbHgt/3 ) )
+//      }); 
+//
+//      scrollTop = $(window).scrollTop();
+//      
+//      // change value to correct fading of each section
+//      if( ExtraBioVisible ){ 
+//          abtHgt = abtHgtReg;
+//      }
+//      else{
+//        abtHgt = abtHgtALT;
+//      }
+//      //fade out About Section
+//      $('.AboutSection').css({
+//        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
+//      });
+//      
+//      // fade out Artwork Section
+//      $('.ArtworkSection').css({             //height of abtHgt + artHgt
+//        'opacity': ( ( height - (scrollTop - (artHgt) )  ) / (artHgt/3) )
+//      }); 
+//
+//      // fade out Artwork Section
+//      $('.ProjectsSection').css({             //height of abtHgt + artHgt
+//        'opacity': ( ( height - (scrollTop - (projHgt) )  ) / (projHgt/7) )
+//      }); 
 
-      //fade out Jumbotron
-      $('.jumbotron').css({
-        'opacity': ( ( height - scrollTop  ) / ( jumbHgt/3 ) )
-      }); 
-
-      scrollTop = $(window).scrollTop();
-      
-      // change value to correct fading of each section
-      if( ExtraBioVisible ){ 
-          abtHgt = abtHgtReg;
-      }
-      else{
-        abtHgt = abtHgtALT;
-      }
-      //fade out About Section
-      $('.AboutSection').css({
-        'opacity': ( ( height - (scrollTop - abtHgt)  ) / 1000 )
-      });
-      
-      // fade out Artwork Section
-      $('.ArtworkSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (artHgt) )  ) / 1000 )
-      }); 
-
-      // fade out Artwork Section
-      $('.ProjectsSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (projHgt) )  ) / 1000 )
-      }); 
-
-      $(".icon-menu").click(function() {
-          $(".menu").fadeTo("fast",1);
-      });
+//      $(".icon-menu").click(function() {
+//          $(".menu").fadeTo("fast",1);
+//      });
       
     }); //SCROLL END
 
