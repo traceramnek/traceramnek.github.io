@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+    <g fill="black">
+      <rect height="336" width="336" x="88" y="77"/>
+    </g>
+    <g fill="white">
+    <rect height="32" width="240" x="136" y="278"/>
+<rect height="32" width="240" x="136" y="224"/>
+<rect height="32" width="240" x="136" y="170"/></g>
+
+</svg>
