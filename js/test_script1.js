@@ -93,7 +93,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
 
       //fade out Jumbotron
       $('.jumbotron').css({
-        'opacity': ( ( 1 - scrollTop  ) / ( jumbHgt ) )
+        'opacity': ( ( height - scrollTop  ) / ( 3000 ) )
       }); 
 
       scrollTop = $(this).scrollTop();
