@@ -105,20 +105,20 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       else{
         abtHgt = abtHgtALT;
       }
-//      //fade out About Section
-//      $('.AboutSection').css({
-//        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
-//      });
+      //fade out About Section
+      $('.AboutSection').css({
+        'opacity': ( ( height - (scrollTop)  ) / (abtHgt/7) )
+      });
 //      
 //      // fade out Artwork Section
 //      $('.ArtworkSection').css({             //height of abtHgt + artHgt
 //        'opacity': ( ( height - (scrollTop - (artHgt) )  ) / (artHgt/3) )
 //      }); 
 //
-      // fade out Artwork Section
-      $('.ProjectsSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/7) )
-      }); 
+//      // fade out Artwork Section
+//      $('.ProjectsSection').css({             //height of abtHgt + artHgt
+//        'opacity': ( ( height - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/7) )
+//      }); 
 
 //      $(".icon-menu").click(function() {
 //          $(".menu").fadeTo("fast",1);
