@@ -93,7 +93,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
 
       //fade out Jumbotron
       $('.jumbotron').css({
-        'opacity': ( ( height - scrollTop  ) / ( jumbHgt/3 ) )
+        'opacity': ( ( 1 - scrollTop  ) / ( jumbHgt/3 ) )
       }); 
 
       scrollTop = $(this).scrollTop();
@@ -107,7 +107,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       }
       //fade out About Section
       $('.AboutSection').css({
-        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
+        'opacity': ( ( 1 - (scrollTop - abtHgt)  ) / (abtHgt/7) )
 //          'opacity': ((1 - scrollTop) / abtHgt)
       });
       
@@ -115,14 +115,14 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       
       // fade out Artwork Section
       $('.ArtworkSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt +artHgt) )  ) / (artHgt/3) )
+        'opacity': ( ( 1 - (scrollTop - (abtHgt +artHgt) )  ) / (artHgt/3) )
       }); 
 
       scrollTop = $(this).scrollTop();
       
       // fade out Artwork Section
       $('.ProjectsSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/7) )
+        'opacity': ( ( 1 - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/7) )
       }); 
 
 //      $(".icon-menu").click(function() {
