@@ -115,14 +115,14 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       
       // fade out Artwork Section
       $('.ArtworkSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt +artHgt) )  ) / (artHgt/18) )
+        'opacity': ( ( height - (scrollTop - (abtHgt +artHgt) )  ) / (artHgt/3) )
       }); 
 
       scrollTop = $(this).scrollTop();
       
       // fade out Artwork Section
       $('.ProjectsSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/22) )
+        'opacity': ( ( height - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/7) )
       }); 
 
 //      $(".icon-menu").click(function() {
