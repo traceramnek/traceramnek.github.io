@@ -70,7 +70,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
     $(window).on('scroll',function(e){
       if(!isMobile){ parallaxScroll(); } // only call if on computer
       else{
-        $('.jumbotron h3, .jumbotron h3').css('color','black');
+        $('.jumbotron h2, .jumbotron h3').css('color','black');
       }
         
     });
