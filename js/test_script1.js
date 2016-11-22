@@ -16,6 +16,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
     var artHgt = $('.ArtworkSection').height();
     var projHgt = $('.ProjectsSection').height();
     var topBtnOffset = 230;
+    var navBarOffset = 300;
     var fadeTime = 300;
     var duration = 300;
     var ExtraBioVisible = false;
@@ -87,6 +88,16 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       else { // hide button
 			//$('.ToTopButton').fadeTo('fast',0);
             $('.ToTopButton').css('opacity', 0);
+      }
+      
+       //Show or hide the To Top Button Arrow
+      if (scrollTop > navBarOffset ) { //show button
+			//$('.ToTopButton').fadeTo('fast',1)
+          $('#header').css('opacity', 1);
+      } 
+      else { // hide button
+			//$('.ToTopButton').fadeTo('fast',0);
+            $('#header').css('opacity', 0);
       }
       
       //NOTE: (ScrollTop - sectionHgt) gets the size of the div
