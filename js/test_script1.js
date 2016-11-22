@@ -96,7 +96,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
         'opacity': ( ( height - scrollTop  ) / ( jumbHgt/3 ) )
       }); 
 
-      scrollTop = $(window).scrollTop();
+      scrollTop = $(this).scrollTop();
       
       // change value to correct fading of each section
       if( ExtraBioVisible ){ 
@@ -108,13 +108,18 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       //fade out About Section
       $('.AboutSection').css({
         'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
+//          'opacity': ((1 - scrollTop) / abtHgt)
       });
+      
+      scrollTop = $(this).scrollTop();
       
       // fade out Artwork Section
       $('.ArtworkSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (artHgt) )  ) / (artHgt/18) )
+        'opacity': ( ( height - (scrollTop - (abtHgt +artHgt) )  ) / (artHgt/18) )
       }); 
 
+      scrollTop = $(this).scrollTop();
+      
       // fade out Artwork Section
       $('.ProjectsSection').css({             //height of abtHgt + artHgt
         'opacity': ( ( height - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/22) )
