@@ -60,7 +60,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
           scrollTop: $("#artSect").offset().top - (navHgt + 20)
         }, 2000);
     });
-    $("#PrjButton, #ProjButton2").click(function() { // smooth scroll to projSect
+    $("#PrjButton, #PrjButton2").click(function() { // smooth scroll to projSect
         $('html, body').animate({
           scrollTop: $("#projSect").offset().top - (navHgt + 20)
         }, 2000);
