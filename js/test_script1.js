@@ -105,21 +105,21 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       else{
         abtHgt = abtHgtALT;
       }
-      //fade out About Section
-      $('.AboutSection').css({
-        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
-//          'opacity': ((1 - scrollTop) / abtHgt)
-      });
-        
-      // fade out Artwork Section
-      $('.ArtworkSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt +artHgt) )  ) / (artHgt/15) )
-      }); 
-      
-      // fade out Artwork Section
-      $('.ProjectsSection').css({             //height of abtHgt + artHgt
-        'opacity': ( ( height - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/22) )
-      }); 
+//      //fade out About Section
+//      $('.AboutSection').css({
+//        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/7) )
+////          'opacity': ((1 - scrollTop) / abtHgt)
+//      });
+//        
+//      // fade out Artwork Section
+//      $('.ArtworkSection').css({             //height of abtHgt + artHgt
+//        'opacity': ( ( height - (scrollTop - (abtHgt +artHgt) )  ) / (artHgt/15) )
+//      }); 
+//      
+//      // fade out Artwork Section
+//      $('.ProjectsSection').css({             //height of abtHgt + artHgt
+//        'opacity': ( ( height - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/22) )
+//      }); 
 
 //      $(".icon-menu").click(function() {
 //          $(".menu").fadeTo("fast",1);
