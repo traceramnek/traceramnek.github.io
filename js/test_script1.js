@@ -107,18 +107,18 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       }
       //fade out About Section
       $('.AboutSection').css({
-        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/height) )
+        'opacity': ( ( height - (scrollTop - abtHgt)  ) / (abtHgt/10) )
       });
-//      
-//      // fade out Artwork Section
-//      $('.ArtworkSection').css({             //height of abtHgt + artHgt
-//        'opacity': ( ( height - (scrollTop - (artHgt) )  ) / (artHgt/3) )
-//      }); 
-//
-//      // fade out Artwork Section
-//      $('.ProjectsSection').css({             //height of abtHgt + artHgt
-//        'opacity': ( ( height - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/7) )
-//      }); 
+      
+      // fade out Artwork Section
+      $('.ArtworkSection').css({             //height of abtHgt + artHgt
+        'opacity': ( ( height - (scrollTop - (artHgt) )  ) / (artHgt/17) )
+      }); 
+
+      // fade out Artwork Section
+      $('.ProjectsSection').css({             //height of abtHgt + artHgt
+        'opacity': ( ( height - (scrollTop - (abtHgt+ artHgt + projHgt) )  ) / (projHgt/24) )
+      }); 
 
 //      $(".icon-menu").click(function() {
 //          $(".menu").fadeTo("fast",1);
