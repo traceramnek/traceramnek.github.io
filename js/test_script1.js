@@ -92,7 +92,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
       }
       
        //Show or hide the To Top Button Arrow
-      if (scrollTop > jumbHgt + 30 ) { //show button
+      if (scrollTop > jumbHgt+10 ) { //show button
 			//$('.ToTopButton').fadeTo('fast',1)
           $('#header').css('opacity', 1);
       } 
