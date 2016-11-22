@@ -15,6 +15,7 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
     var jumbHgt = $('.jumbotron').height();
     var artHgt = $('.ArtworkSection').height();
     var projHgt = $('.ProjectsSection').height();
+    var navHgt = $('#header').height();
     var topBtnOffset = 230;
     var navBarOffset = 300;
     var fadeTime = 300;
@@ -49,19 +50,19 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
     	$('#worksButton, #projButton').fadeTo('fast',0.5); // hide the buttons
     } );
 
-    $("#AbtButton").click(function() { // smooth scroll to aboutSect
+    $("#AbtButton, #AbtButton2").click(function() { // smooth scroll to aboutSect
         $('html, body').animate({
-          scrollTop: $("#aboutSect").offset().top
+          scrollTop: $("#aboutSect").offset().top - navHgt
         }, 2000);
     });
-    $("#ArtButton").click(function() { // smooth scroll to artSect
+    $("#ArtButton, #ArtButton2").click(function() { // smooth scroll to artSect
         $('html, body').animate({
-          scrollTop: $("#artSect").offset().top
+          scrollTop: $("#artSect").offset().top - navHgt
         }, 2000);
     });
-    $("#PrjButton").click(function() { // smooth scroll to projSect
+    $("#PrjButton, #ProjButton2").click(function() { // smooth scroll to projSect
         $('html, body').animate({
-          scrollTop: $("#projSect").offset().top
+          scrollTop: $("#projSect").offset().top - navHgt
         }, 2000);
     });
 
