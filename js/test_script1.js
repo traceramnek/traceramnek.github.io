@@ -24,6 +24,8 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
     var OtherExpVisible = false;
     //used to disable parralax on mobile devices
     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+    var is_firefox = navigator.userAgent.indexOf('Firefox') != -1; // test if user is in firefox
+    var is_safari = navigator.userAgent.indexOf("Safari") != -1; //test if user is in safari
 
   
   
@@ -68,7 +70,9 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
 
     //ADD PARALLAX SCROLLING TO PAGE
     $(window).on('scroll',function(e){
-      if(!isMobile){ parallaxScroll(); } // only call if on computer
+      if(!isMobile || !is_firefox || !is_safari){ // only call if on computer
+        parallaxScroll(); 
+      } 
         
     });
  

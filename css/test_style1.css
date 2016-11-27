@@ -6,7 +6,7 @@ html,body
 }
 
 body {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Tenderness', sans-serif;
   font-weight: 300;
   background-color: #333333;
 
@@ -16,7 +16,7 @@ body {
 }
 
 #NavOverlay{
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Tenderness', sans-serif;
   padding: 15px 0;
   color: white;
 /*  background-color: #333333;
@@ -30,7 +30,7 @@ body {
 }
 
 #header {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Tenderness', sans-serif;
   padding: 15px 0;
   color: white;
   background-color: #333333;
@@ -229,6 +229,11 @@ section .row img {
 
 }
 
+.SectionBlurb{
+  color: white;
+  
+}
+
 .AboutSection{
   /*background-color: #333333;*/
   border-top: 8px solid white;
@@ -288,13 +293,13 @@ table{
   margin: auto;
   margin-bottom: 40px;
   width: 100%;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Tenderness', sans-serif;
   font-size: 2.5vw;
   text-align: center;
 }
 
 td{
-  font-family: 'Oxygen',sans-serif;
+  font-family: 'Tenderness',sans-serif;
   border: 1px solid white;
 }
 
@@ -305,7 +310,7 @@ th{
 
 
 #tableTitle{
-  font-family: "Oxygen", sans-serif;
+  font-family: "Tenderness", sans-serif;
   font-size: 3.5vw;
   font-weight: bold;
   color: #33adff;
@@ -372,7 +377,7 @@ footer {
   /*background-color: #264d73;*/
 /*  background-color: #333333;*/
   color: white;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Tenderness', sans-serif;
   text-align: center;
   justify-content: center;
 }
