@@ -2,7 +2,7 @@ html,body
 {
   /* THIS STOPS SPACE ON RIGHTSIDE OF PAGE WHEN ON BROWSERS*/
     overflow-x: hidden;
-    background-image: url('CSSImages/NoisyTexture2.png');
+    background-image: url('CSSImages/pic01.jpg');
 }
 
 body {
