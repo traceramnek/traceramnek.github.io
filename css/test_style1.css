@@ -238,17 +238,15 @@ section .row img {
 .AboutSection{
   /*background-color: #333333;*/
   border-top: 8px solid white;
-  width: 100%;
+  
 }
 
 .ArtworkSection{
   border-top: 8px solid white;
-  width: 100%;
 }
 
 .ProjectsSection{
   border-top: 8px solid white;
-  width: 100%;
 }
 
 .bio{
