@@ -2,7 +2,7 @@ html,body
 {
   /* THIS STOPS SPACE ON RIGHTSIDE OF PAGE WHEN ON BROWSERS*/
     overflow-x: hidden;
-    background-color: cadetblue;
+    background-color: #333333;
 /*    background-image: url('CSSImages/NoisyTexture2.png');*/
     
 }
@@ -97,7 +97,7 @@ header a:hover, header a:active{
 }
 
 .blurBG{
-    background:url('CSSImages/DividedExt2.png') no-repeat center;
+    background:url('CSSImages/KwanSH_Logo1.png') no-repeat center;
     background-size:cover;
     background-position: top;
     /*-webkit-filter: blur(3px);
