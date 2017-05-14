@@ -238,17 +238,19 @@ section .row img {
 }
 
 .AboutSection{
-  /*background-color: #333333;*/
-  border-top: 8px solid white;
+  background-color: #00ace6;
+/*  border-top: 8px solid white;*/
   
 }
 
 .ArtworkSection{
-  border-top: 8px solid white;
+  background-color: #0077b3;
+/*  border-top: 8px solid white;*/
 }
 
 .ProjectsSection{
-  border-top: 8px solid white;
+  background-color: #007399;
+/*  border-top: 8px solid white;*/
 }
 
 .bio{
