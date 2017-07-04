@@ -242,6 +242,10 @@ section .row img {
   
 }
 
+.AboutSection p{
+  max-width: 75%;
+}
+
 .ArtworkSection{
 /*  background-color: #004b66;*/
   border-top: 8px solid white;
