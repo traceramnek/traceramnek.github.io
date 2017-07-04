@@ -243,6 +243,7 @@ section .row img {
 }
 
 .AboutSection p{
+  text-align: center;
   max-width: 75%;
 }
 
