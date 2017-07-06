@@ -69,12 +69,12 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
     });
 
     //ADD PARALLAX SCROLLING TO PAGE
-    $(window).on('scroll',function(e){
-      if(!isMobile || !is_firefox || !is_safari){ // only call if on computer
-        parallaxScroll(); 
-      } 
-        
-    });
+//    $(window).on('scroll',function(e){
+//      if(!isMobile || !is_firefox || !is_safari){ // only call if on computer
+//        parallaxScroll(); 
+//      } 
+//        
+//    });
  
     function parallaxScroll(){ // scrolls image when scrolling in jumbotron
       var multiplier = 0.2 // //higher multipier = more image
