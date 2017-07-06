@@ -76,12 +76,12 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
 //        
 //    });
  
-    function parallaxScroll(){ // scrolls image when scrolling in jumbotron
-      var multiplier = 0.2 // //higher multipier = more image
-      //scrolls the image by num pixels + scrollY* multiplier
-      $('.blurBG').css('background-position','center -'+( (scrollTop * multiplier) )+'px');
-      
-    }
+//    function parallaxScroll(){ // scrolls image when scrolling in jumbotron
+//      var multiplier = 0.2 // //higher multipier = more image
+//      //scrolls the image by num pixels + scrollY* multiplier
+//      $('.blurBG').css('background-position','center -'+( (scrollTop * multiplier) )+'px');
+//      
+//    }
 
     $(window).scroll(function () { // SCROLL START
       
