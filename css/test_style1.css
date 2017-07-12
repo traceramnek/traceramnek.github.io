@@ -8,7 +8,7 @@ html,body
 }
 
 body {
-  font-family: 'Lucida Sans Unicode', Helvetica, sans-serif;
+  font-family: 'Century Gothic', Helvetica, sans-serif;
   font-weight: 300;
   background-color: #333333;
 
@@ -18,7 +18,7 @@ body {
 }
 
 #NavOverlay{
-  font-family: 'Lucida Sans Unicode', Helvetica, sans-serif;
+  font-family: 'Century Gothic', Helvetica, sans-serif;
   padding: 15px 0;
   color: white;
 /*  background-color: #333333;
@@ -32,7 +32,7 @@ body {
 }
 
 #header {
-  font-family: 'Lucida Sans Unicode', Helvetica, sans-serif;
+  font-family: 'Century Gothic', Helvetica, sans-serif;
   padding: 15px 0;
   color: white;
   background-color: #333333;
@@ -296,13 +296,13 @@ table{
   margin: auto;
   margin-bottom: 40px;
   width: 100%;
-  font-family: 'Lucida Sans Unicode', Helvetica, sans-serif;
+  font-family: 'Century Gothic', Helvetica, sans-serif;
   font-size: 2.5vw;
   text-align: center;
 }
 
 td{
-  font-family: 'Lucida Sans Unicode', Helvetica, sans-serif;
+  font-family: 'Century Gothic', Helvetica, sans-serif;
   border: 1px solid white;
 }
 
@@ -313,7 +313,7 @@ th{
 
 
 #tableTitle{
-  font-family: 'Lucida Sans Unicode', Helvetica, sans-serif;
+  font-family: 'Century Gothic', Helvetica, sans-serif;
   font-size: 3.5vw;
   font-weight: bold;
   color: #33adff;
@@ -380,7 +380,7 @@ footer {
   /*background-color: #264d73;*/
 /*  background-color: #333333;*/
   color: white;
-  font-family: 'Lucida Sans Unicode', Helvetica, sans-serif;
+  font-family: 'Century Gothic', Helvetica, sans-serif;
   text-align: center;
   justify-content: center;
 }
