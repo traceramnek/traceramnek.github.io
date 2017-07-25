@@ -54,17 +54,17 @@ $(document).ready(function () { // load on opening of html page, JQUERY START
 
     $("#AbtButton, #AbtButton2").click(function() { // smooth scroll to aboutSect
         $('html, body').animate({
-          scrollTop: $("#aboutSect").offset().top - (navHgt + 20)
+          scrollTop: $("#aboutSect").offset().top - (navHgt + 30)
         }, 2000);
     });
     $("#ArtButton, #ArtButton2").click(function() { // smooth scroll to artSect
         $('html, body').animate({
-          scrollTop: $("#artSect").offset().top - (navHgt + 20)
+          scrollTop: $("#artSect").offset().top - (navHgt + 30)
         }, 2000);
     });
     $("#PrjButton, #PrjButton2").click(function() { // smooth scroll to projSect
         $('html, body').animate({
-          scrollTop: $("#projSect").offset().top - (navHgt + 20)
+          scrollTop: $("#projSect").offset().top - (navHgt + 30)
         }, 2000);
     });
 
