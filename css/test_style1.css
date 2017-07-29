@@ -36,14 +36,14 @@ body {
 }
 
 #header {
+  position: fixed;
   font-family: 'Candara', Helvetica, sans-serif;
+  padding: .25em 0;
   color: white;
   background-color: #3f639b;
   background-size: cover;
   width: 100%;
-  z-index: 160;
-  position: fixed;
-  padding: .25em 0;
+  z-index: 100;
 /*  border: 2px solid #bfbfbf;*/
 /*  border-radius: 7px;*/
   font-size: .8em;
@@ -129,14 +129,14 @@ header a:hover, header a:active{
 
 .jumbotron h2 {
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 100;
   margin: 0;
   color: #e0ebeb; 
   text-align: center;
 }
 
 .jumbotron h3 {
-  font-weight: 400;
+  font-weight: 100;
   font-size: 30px;
   margin: 0 0 20px;
   color: #e0ebeb;
@@ -175,8 +175,9 @@ section .row img {
 }
 
 .sectTitle {
-  font-size: 34px;
+  font-size: 3em;
   color: #33adff;
+  font-weight: 100;
 }
 
 .midwords {
@@ -187,7 +188,7 @@ section .row img {
 
 .promoTITLE{
   margin: auto;
-  font-weight: bold;
+  font-weight: 100;
   padding-bottom: 2%;
 }
 
@@ -329,9 +330,9 @@ th{
 
 
 #tableTitle{
-  font-family: 'Candara', Helvetica, sans-serif;
+  font-family: 'Calibri', Helvetica, sans-serif;
   font-size: 3.5vw;
-  font-weight: bold;
+/*  font-weight: bold;*/
   color: #33adff;
   
 }
