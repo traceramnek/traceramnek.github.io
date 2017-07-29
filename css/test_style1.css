@@ -61,7 +61,7 @@ header h1 {
 }
 
 header nav {
-  font-size: 2vw;
+  font-size: 1.2em;
   margin-top: 9px;
   display: flex;
   justify-content: flex-end;
@@ -75,7 +75,7 @@ header p {
 
 header a, header a:visited{
   padding: 0 20px;
-  margin: 0;
+  margin: 0 -1px;
   color: white;
   border-right: solid white 2px;
   border-left: solid white 2px;
@@ -141,20 +141,21 @@ header a:hover, header a:active{
 }
 
 .ToTopButton{
-  font-size: 1.6vw;
+   font-size: 1.2em;
   opacity: 0;
   color: white;
-  position: fixed;
-  bottom: 0; /* tells page WHERE to place the arrow. NEEDED */
-  right: 0; /* tells page WHERE to place the arrow. NEEDED */
+/*  position: fixed;*/
+/*  bottom: 0;  tells page WHERE to place the arrow. NEEDED */
+  right: 0;  /*tells page WHERE to place the arrow. NEEDED */
   z-index: 100;
+  border: none;
 }
 .ToTopButton:visited, .faIcons:visited{
   color: white;
 }
 
 .ToTopButton:hover, .ToTopButton:active, .faIcons:active, .faIcons:hover{
-  color: cadetblue;
+  color: #c8cbd1;
   text-decoration: none;
 }
 
@@ -299,7 +300,7 @@ section div h3 {
 table{
 
   border-collapse: separate !important; /* Allows border radius to work*/
-  border: 5px solid white;
+  border: 5px solid whitesmoke;
   color: white;
   margin: auto;
   margin-bottom: 40px;
@@ -309,9 +310,14 @@ table{
   text-align: center;
 }
 
+tr:nth-child(even){
+  background-color: whitesmoke;
+  color: black;
+}
+
 td{
   font-family: 'Candara', Helvetica, sans-serif;
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
 }
 
 th{
