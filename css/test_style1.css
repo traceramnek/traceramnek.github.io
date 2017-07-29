@@ -18,16 +18,20 @@ body {
 }
 
 #NavOverlay{ /* UNUSED */ 
+/*
   font-family: 'Candara', Helvetica, sans-serif;
   padding: 15px 0;
   color: white;
+*/
 /*  background-color: #333333;
 */  /*background-color: #262626;  GRAY */
+/*
   background-size: cover;
   width: 100%;
   z-index: 150;
   border: 2px solid #bfbfbf;
   border-radius: 7px;
+*/
 
 }
 
@@ -38,7 +42,6 @@ body {
   background-size: cover;
   width: 100%;
   z-index: 160;
-  opacity: 0;
   position: fixed;
   padding: .25em 0;
 /*  border: 2px solid #bfbfbf;*/
