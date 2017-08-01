@@ -195,7 +195,7 @@ section .row img {
 
 .promoIMG {
   width: 20em;
-  height: 16em;
+  height: 20em;
   border: 5px solid black;
   margin-bottom: 20px;
   opacity: 0.75;
@@ -204,7 +204,7 @@ section .row img {
 .promoProj{
   opacity: 0.85;
   width: 20em;
-  height: 16em;
+  height: 20em;
 }
 
 .promoWrapper{
