@@ -1,0 +1,45 @@
+@import '../../assets/less/variables.less';
+@import '../../assets/less/mixins.less';
+
+// THIS FILE CONTAINS STYLES THAT WILL BE REUSED THROUGHOUT THE WEBSITE
+
+.main-container{
+    height: 100vh;
+    background-color: @dark-blue1;
+    color: @white-color;
+
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    padding-top: 4em;
+    background-color: @overlay-color;
+}
+
+.mini-section{
+    border-top: 1px solid @white-color;
+    background-color: @dark-blue1;
+    color: @white-color;
+    
+    padding: 2em;
+    button{
+        margin: 1em;
+    }
+}
+
+.section-button{
+    font-size: 1.5em;
+    padding: .5em 2em;
+    border-radius: 50px;
+    background-color: transparent;
+    color: @white-color;
+    border: @white-color 1px solid;
+    // Rules to make background slide in from right
+    .slide-from-left(transparent, @white-color);
+    .setTransition(.4s);
+    &:hover{
+        .setTransition(.4s);
+        color: @dark-blue1;
+        background-position: bottom left;
+    }
+}

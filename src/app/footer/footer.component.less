@@ -1,0 +1,33 @@
+@import '../../assets/less/variables.less';
+@import '../../assets/less/mixins.less';
+
+.footer-container{
+    background-color: @charcoal-color;
+    color: @white-color;
+}
+
+.social-icons{
+    a{
+        color: @white-color;
+        text-decoration: none;
+    }
+    i{
+        margin: 1em;
+        height: 45px;
+        width: 45px;
+        font-size: 1.5em;
+        border: 1px solid @white-color;
+        border-radius: 50%;
+        padding: .5em;
+        &:hover{
+            background-color: @white-color;
+            color: @charcoal-color;
+        }
+    }
+
+}
+
+.copyright{
+    margin: 1em 0;
+    opacity: 0.5;
+}

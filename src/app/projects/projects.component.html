@@ -1,0 +1,33 @@
+<div class="main-container proj-landing text-center">
+  <div class="overlay">
+    <div class="main-content">
+      <br>
+
+      <h1>PROJECTS</h1>
+      <div class="proj-blurb">
+        Projects I've worked in the last few years
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="projects-section">
+
+
+  <div class="project-container">
+
+    <div class="proj-div" *ngFor="let proj of projects">
+      <img src="{{proj.imgPath}}">
+      <div class="img-overlay">
+        <div class="proj-title proj-bottom">{{proj.title}}</div>
+        <div class="proj-button proj-top">
+          <a href="{{proj.url}}" target="_blank" class="section-button">Check it out</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

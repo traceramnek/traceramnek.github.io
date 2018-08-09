@@ -1,0 +1,39 @@
+.setTransition (@transition) {
+    transition: @transition;
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}
+
+.transform(@string){
+	-webkit-transform: @string;
+	-moz-transform: 	 @string;
+	-ms-transform: 		 @string;
+	-o-transform: 		 @string;
+}
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+/* NOTE: Add background-position: bottom left 
+	to the hover state of the apecified element
+*/ 
+.slide-from-left(@start-color, @end-color){
+	background-image: linear-gradient(to left, @start-color 50%, @end-color 50%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/* NOTE: Add background-position: bottom right
+	to the hover state of the apecified element
+*/ 
+.slide-from-right(@start-color, @end-color){
+	background-image: linear-gradient(to right, @start-color 50%, @end-color 50%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}

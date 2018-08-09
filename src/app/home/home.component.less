@@ -1,0 +1,29 @@
+@import '../../assets/less/variables.less';
+@import '../../assets/less/mixins.less';
+@import '../../assets/less/k-styles.less';
+
+// overriding generic class
+.landing-page-container{
+    background-image: url('../../assets/images/kwan_la_sqr.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.overlay{
+    padding-top: 4em;
+    height: 100%;
+    background-color: @overlay-color;
+}
+
+.main-text{
+    margin-top: 4em;
+    color: @white-color;
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    h1{
+        font-size: 72px;
+        font-weight: bold;
+    }
+}
