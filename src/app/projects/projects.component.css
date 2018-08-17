@@ -4,6 +4,17 @@
 /* NOTE: Add background-position: bottom right
 	to the hover state of the apecified element
 */
+.main-text {
+  margin-top: 4em;
+  color: ghostwhite;
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main-text h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
 .main-container {
   height: 100vh;
   color: ghostwhite;
@@ -31,7 +42,7 @@
   color: ghostwhite;
   border: ghostwhite 1px solid;
   background-image: linear-gradient(to left, transparent 50%, ghostwhite 50%);
-  background-size: 200% 100%;
+  background-size: 205% 100%;
   background-repeat: no-repeat;
   background-position: bottom right;
   transition: 0.4s;
@@ -59,7 +70,7 @@
   /* Enable scrolling on the page. */
   overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
+  perspective: 1px;
 }
 .parallax-section {
   /* Needed for children to be absolutely positioned relative to the parent. */
@@ -72,23 +83,6 @@
   justify-content: center;
   color: white;
 }
-.parallax::after {
-  /* Display and position the pseudo-element */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  /* Move the pseudo-element back away from the camera,
-        * then scale it back up to fill the viewport.
-        * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
-}
 .main-proj-container {
   background-color: #16385f;
   color: ghostwhite;
@@ -98,6 +92,23 @@
   background-image: url('../../assets/images/chryssler.jpg');
   background-size: cover;
   background-position: top;
+}
+.proj-parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Move the pseudo-element back away from the camera,
+			* then scale it back up to fill the viewport.
+			* Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(2);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
 }
 .bg1::after {
   background-image: url('../../assets/images/chryssler.jpg');
