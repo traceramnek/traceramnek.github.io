@@ -4,16 +4,26 @@
 /* NOTE: Add background-position: bottom right
 	to the hover state of the apecified element
 */
+.page-title {
+  font-size: 72px;
+  font-weight: bold;
+}
+.page-title:before,
+.page-title:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 600px;
+}
 .main-text {
   margin-top: 4em;
   color: ghostwhite;
   font-size: 4em;
   font-weight: bold;
   text-transform: uppercase;
-}
-.main-text h1 {
-  font-size: 72px;
-  font-weight: bold;
 }
 .main-container {
   height: 100vh;
@@ -23,7 +33,7 @@
   height: 100%;
   width: 100%;
   padding-top: 4em;
-  background-color: rgba(52, 59, 66, 0.3);
+  background-color: rgba(52, 59, 66, 0.4);
 }
 .mini-section {
   border-top: 1px solid ghostwhite;
@@ -83,12 +93,6 @@
   justify-content: center;
   color: white;
 }
-.bio-pic {
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-}
 .bio-pic img {
   width: 20em;
   height: 20em;
@@ -100,6 +104,7 @@
   font-size: 1.5em;
   padding: 2em 15%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -121,7 +126,7 @@
   z-index: -1;
 }
 .bg1::after {
-  background-image: url('../../assets/images/domino2.jpg');
+  background-image: url('../../assets/images/brick_light.jpg');
   background-size: cover;
   background-position: center;
 }

@@ -4,16 +4,34 @@
 /* NOTE: Add background-position: bottom right
 	to the hover state of the apecified element
 */
+.page-title {
+  font-size: 72px;
+  font-weight: bold;
+}
+.page-title:before,
+.page-title:after {
+  background-color: ghostwhite;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 80px;
+}
+.page-title:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.page-title:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
 .main-text {
   margin-top: 4em;
   color: ghostwhite;
   font-size: 4em;
   font-weight: bold;
   text-transform: uppercase;
-}
-.main-text h1 {
-  font-size: 72px;
-  font-weight: bold;
 }
 .main-container {
   height: 100vh;
@@ -23,7 +41,7 @@
   height: 100%;
   width: 100%;
   padding-top: 4em;
-  background-color: rgba(52, 59, 66, 0.3);
+  background-color: rgba(52, 59, 66, 0.4);
 }
 .mini-section {
   border-top: 1px solid ghostwhite;
@@ -64,7 +82,7 @@
 .parallax-wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
         * 100vh is the full height of the viewport. */
-  height: 100vh;
+  height: 101vh;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
   overflow-x: hidden;
   /* Enable scrolling on the page. */
@@ -76,17 +94,15 @@
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
+  height: 101vh;
   /* For text formatting. */
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
-.main-proj-container {
-  background-color: #16385f;
+.projects-section {
   color: ghostwhite;
-  padding-top: 7em;
 }
 .proj-landing {
   background-image: url('../../assets/images/chryssler.jpg');
@@ -110,7 +126,7 @@
   /* Keep the image from overlapping sibling elements. */
   z-index: -1;
 }
-.bg1::after {
+.bg-main::after {
   background-image: url('../../assets/images/chryssler.jpg');
   background-size: cover;
   background-position: top;
@@ -172,7 +188,7 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  background-color: rgba(52, 59, 66, 0.3);
+  background-color: rgba(52, 59, 66, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,4 +225,27 @@
   opacity: 0;
   position: absolute;
   text-align: center;
+}
+.left-panel {
+  height: 100vh;
+}
+.right-panel {
+  height: 100vh;
+  background-color: ;
+}
+.bg0 {
+  background: url('../../assets/images/bhive_long.png') no-repeat;
+  background-size: cover;
+}
+.bg1 {
+  background: url('../../assets/images/code_control_2.png') no-repeat;
+  background-size: cover;
+}
+.bg2 {
+  background: url('../../assets/images/CryptoFit_sqr.png') no-repeat center;
+  background-size: cover;
+}
+.bg3 {
+  background: url('../../assets/images/potg_long.png') no-repeat center;
+  background-size: cover;
 }

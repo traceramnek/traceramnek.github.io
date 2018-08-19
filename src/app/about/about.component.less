@@ -1,7 +1,6 @@
 @import '../../assets/less/k-styles.less';
 
 .bio-pic{
-    .transform(rotate(-90deg));
     img{
         width: 20em;
         height: 20em;
@@ -15,6 +14,7 @@
     font-size: 1.5em;
     padding: 2em 15%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
@@ -25,7 +25,7 @@
 }
 
 .bg1::after {
-    background-image: url('../../assets/images/domino2.jpg');
+    background-image: url('../../assets/images/brick_light.jpg');
     background-size: cover;
     background-position: center;
 }

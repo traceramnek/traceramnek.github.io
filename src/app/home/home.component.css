@@ -4,6 +4,20 @@
 /* NOTE: Add background-position: bottom right
 	to the hover state of the apecified element
 */
+.page-title {
+  font-size: 72px;
+  font-weight: bold;
+}
+.page-title:before,
+.page-title:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 600px;
+}
 .main-text {
   margin-top: 4em;
   color: ghostwhite;
@@ -19,7 +33,7 @@
   height: 100%;
   width: 100%;
   padding-top: 4em;
-  background-color: rgba(52, 59, 66, 0.3);
+  background-color: rgba(52, 59, 66, 0.4);
 }
 .mini-section {
   border-top: 1px solid ghostwhite;
@@ -79,10 +93,6 @@
   justify-content: center;
   color: white;
 }
-h1 {
-  font-size: 72px;
-  font-weight: bold;
-}
 .home-container {
   background-image: url('../../assets/images/kwan_la_sqr.jpg');
   background-size: cover;
@@ -91,7 +101,7 @@ h1 {
 .overlay {
   padding-top: 4em;
   height: 100%;
-  background-color: rgba(52, 59, 66, 0.3);
+  background-color: rgba(52, 59, 66, 0.4);
 }
 .landing-parallax-section {
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */

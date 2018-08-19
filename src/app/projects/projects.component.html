@@ -1,21 +1,16 @@
-<div class="parallax-section proj-parallax bg1 text-center">
+<div class="parallax-section proj-parallax bg-main text-center">
   <div class="overlay">
-    <div class="main-content">
-      <br>
-
-      <h1>PROJECTS</h1>
-      <div class="proj-blurb">
-        Projects I've worked in the last few years
-      </div>
+    <div class="main-text">
+      <h3>PROJECTS</h3>
+      <h1 class="page-title">What I've Done</h1>
     </div>
-
   </div>
 </div>
 
 <div class="projects-section">
 
 
-  <div class="project-container">
+  <!-- <div class="project-container">
 
     <div class="proj-div" *ngFor="let proj of projects">
       <img src="{{proj.imgPath}}">
@@ -27,6 +22,18 @@
       </div>
     </div>
 
+  </div> -->
+
+  <div class="proj-div" *ngFor="let proj of projects; let i = index;">
+    <div class="left-panel col-xs-6 bg{{i}}">
+      <!-- <img src="{{proj.imgPath}}"> -->
+    </div>
+    <div class="right-panel col-xs-6" [ngClass]="">
+      <div class="proj-title proj-bottom">{{proj.title}}</div>
+      <div class="proj-button proj-top">
+        <a href="{{proj.url}}" target="_blank" class="section-button">Check it out</a>
+      </div>
+    </div>
   </div>
 
 

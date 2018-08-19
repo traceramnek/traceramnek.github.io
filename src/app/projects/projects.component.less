@@ -1,10 +1,8 @@
 @import '../../assets/less/k-styles.less';
 
 
-.main-proj-container{
-    background-color: @dark-blue1;
+.projects-section{
     color: @white-color;
-    padding-top: 7em; // to give space for the navbar
 }
 
 .proj-landing{
@@ -13,11 +11,13 @@
     background-position: top;
 }
 
+
+
 .proj-parallax{
     .parallax();
 }
 
-.bg1::after {
+.bg-main::after {
     background-image: url('../../assets/images/chryssler.jpg');
     background-size: cover;
     background-position: top;
@@ -102,4 +102,30 @@
     opacity: 0;
     position: absolute;
     text-align: center;
+}
+
+.left-panel{
+    height: 100vh;
+}
+
+.right-panel{
+    height: 100vh;
+    background-color: ;
+}
+
+.bg0{
+    background: url('../../assets/images/bhive_long.png') no-repeat;
+    background-size: cover;
+}
+.bg1{
+    background: url('../../assets/images/code_control_2.png') no-repeat;
+    background-size: cover;
+}
+.bg2{
+    background: url('../../assets/images/CryptoFit_sqr.png') no-repeat center;
+    background-size: cover;
+}
+.bg3{
+    background: url('../../assets/images/potg_long.png') no-repeat center;
+    background-size: cover;
 }

@@ -3,22 +3,22 @@
         {
             "title": "B Hive",
             "url": "https://bhive.bricartsmedia.org",
-            "imgPath": "../../assets/images/bhive_sqr.png"
+            "imgPath": "bhive_sqr.png"
         },
         {
             "title": "Code Control",
-            "url": "https://mike200385.itch.io/code-control",
-            "imgPath": "../../assets/images/CodeControl_img.png"
+            "url": "http://rpantaev.com/CodeControl/",
+            "imgPath": "code_control_2.png"
         },
         {
             "title": "Crypto Fit",
             "url": "https://github.com/traceramnek/aws-fitbit-competition",
-            "imgPath": "../../assets/images/CryptoFit_sqr.png"
+            "imgPath": "CryptoFit_sqr.png"
         },
         {
             "title": "Path of the Gamer",
             "url": "https://traceramnek.github.io/Path-Of-The-Gamer/",
-            "imgPath": "../../assets/images/POTG_Shot.png"
+            "imgPath": "POTG_Shot.png"
         }
     ]
 }
