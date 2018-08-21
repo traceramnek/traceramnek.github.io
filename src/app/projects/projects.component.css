@@ -8,8 +8,12 @@
   font-size: 72px;
   font-weight: bold;
 }
-.page-title:before,
-.page-title:after {
+.page-title-line {
+  font-size: 72px;
+  font-weight: bold;
+}
+.page-title-line:before,
+.page-title-line:after {
   background-color: ghostwhite;
   content: "";
   display: inline-block;
@@ -18,11 +22,11 @@
   vertical-align: middle;
   width: 80px;
 }
-.page-title:before {
+.page-title-line:before {
   right: 0.5em;
   margin-left: -50%;
 }
-.page-title:after {
+.page-title-line:after {
   left: 0.5em;
   margin-right: -50%;
 }

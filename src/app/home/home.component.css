@@ -8,15 +8,27 @@
   font-size: 72px;
   font-weight: bold;
 }
-.page-title:before,
-.page-title:after {
+.page-title-line {
+  font-size: 72px;
+  font-weight: bold;
+}
+.page-title-line:before,
+.page-title-line:after {
+  background-color: ghostwhite;
   content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
-  top: 0;
-  width: 600px;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 80px;
+}
+.page-title-line:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.page-title-line:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 .main-text {
   margin-top: 4em;
@@ -36,6 +48,7 @@
   background-color: rgba(52, 59, 66, 0.4);
 }
 .mini-section {
+  font-weight: 300;
   border-top: 1px solid ghostwhite;
   background-color: #16385f;
   color: ghostwhite;
@@ -43,6 +56,9 @@
 }
 .mini-section button {
   margin: 1em;
+}
+.mini-section p {
+  font-size: 1.5em;
 }
 .section-button {
   font-size: 1.5em;
@@ -67,14 +83,13 @@
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
-  color: #16385f;
   background-position: bottom left;
 }
 /* PARALLAX STYLES= */
 .parallax-wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
         * 100vh is the full height of the viewport. */
-  height: 100vh;
+  height: 101vh;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
   overflow-x: hidden;
   /* Enable scrolling on the page. */
@@ -86,7 +101,7 @@
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
+  height: 101vh;
   /* For text formatting. */
   display: flex;
   align-items: center;
@@ -105,11 +120,12 @@
 }
 .landing-parallax-section {
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
   /* For text formatting. */
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
+  height: 101vh;
   /* For text formatting. */
   display: flex;
   align-items: center;
@@ -159,6 +175,9 @@
   background-size: 100%;
   /* Keep the image from overlapping sibling elements. */
   z-index: -1;
+}
+.section-button:hover {
+  color: #16385f;
 }
 .bg1::after {
   background-image: url('../../assets/images/kwan_la_sqr.jpg');

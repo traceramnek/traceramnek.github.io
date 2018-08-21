@@ -4,16 +4,48 @@
 /* NOTE: Add background-position: bottom right
 	to the hover state of the apecified element
 */
+.page-title {
+  font-size: 72px;
+  font-weight: bold;
+}
+.page-title-line {
+  font-size: 72px;
+  font-weight: bold;
+}
+.page-title-line:before,
+.page-title-line:after {
+  background-color: ghostwhite;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 80px;
+}
+.page-title-line:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.page-title-line:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.main-text {
+  margin-top: 4em;
+  color: ghostwhite;
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .main-container {
   height: 100vh;
-  background-color: #16385f;
   color: ghostwhite;
 }
 .overlay {
   height: 100%;
   width: 100%;
   padding-top: 4em;
-  background-color: rgba(52, 59, 66, 0.5);
+  background-color: rgba(52, 59, 66, 0.4);
 }
 .mini-section {
   border-top: 1px solid ghostwhite;
@@ -32,7 +64,7 @@
   color: ghostwhite;
   border: ghostwhite 1px solid;
   background-image: linear-gradient(to left, transparent 50%, ghostwhite 50%);
-  background-size: 200% 100%;
+  background-size: 205% 100%;
   background-repeat: no-repeat;
   background-position: bottom right;
   transition: 0.4s;
@@ -49,6 +81,29 @@
   -o-transition: 0.4s;
   color: #16385f;
   background-position: bottom left;
+}
+/* PARALLAX STYLES= */
+.parallax-wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+        * 100vh is the full height of the viewport. */
+  height: 101vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 1px;
+}
+.parallax-section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 101vh;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 .error-container {
   height: 101vh;
@@ -82,7 +137,7 @@
   color: ghostwhite;
   border: ghostwhite 3px solid;
   background-image: linear-gradient(to left, transparent 50%, ghostwhite 50%);
-  background-size: 200% 100%;
+  background-size: 205% 100%;
   background-repeat: no-repeat;
   background-position: bottom right;
   transition: 0.5s;

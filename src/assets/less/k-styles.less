@@ -2,15 +2,19 @@
 @import '../../assets/less/mixins.less';
 
 // THIS FILE CONTAINS STYLES THAT WILL BE REUSED THROUGHOUT THE WEBSITE
-
 .page-title{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.page-title-line{
     font-size: 72px;
     font-weight: bold;
 
     // For horizontal lines next to headings
     &:before,
     &:after {
-        background-color: @white-color;
+        background-color: @main-color;
         content: "";
         display: inline-block;
         height: 2px;
@@ -31,7 +35,7 @@
 
 .main-text{
     margin-top: 4em;
-    color: @white-color;
+    color: @main-color;
     font-size: 4em;
     font-weight: bold;
     text-transform: uppercase;
@@ -40,7 +44,7 @@
 
 .main-container{
     height: 100vh;
-    color: @white-color;
+    color: @main-color;
 }
 .overlay{
     height: 100%;
@@ -50,13 +54,18 @@
 }
 
 .mini-section{
-    border-top: 1px solid @white-color;
+    font-weight: 300;
+    border-top: 1px solid @main-color;
     background-color: @dark-blue1;
-    color: @white-color;
+    color: @main-color;
     
     padding: 2em;
     button{
         margin: 1em;
+    }
+
+    p{
+        font-size: 1.5em;
     }
 }
 
@@ -65,14 +74,13 @@
     padding: .5em 2em;
     border-radius: 50px;
     background-color: transparent;
-    color: @white-color;
-    border: @white-color 1px solid;
+    color: @main-color;
+    border: @main-color 1px solid;
     // Rules to make background slide in from right
-    .slide-from-left(transparent, @white-color);
+    .slide-from-left(transparent, @main-color);
     .setTransition(.4s);
     &:hover{
         .setTransition(.4s);
-        color: @dark-blue1;
         background-position: bottom left;
     }
 }

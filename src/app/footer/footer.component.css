@@ -1,3 +1,9 @@
+/* NOTE: Add background-position: bottom left 
+	to the hover state of the apecified element
+*/
+/* NOTE: Add background-position: bottom right
+	to the hover state of the apecified element
+*/
 .footer-container {
   background-color: #333333;
   color: ghostwhite;
