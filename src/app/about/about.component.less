@@ -24,7 +24,6 @@
 
 .about-section{
     z-index: -1;
-    border-top: 1px solid @main-color;
     background-color: @brick-color;
     color: @main-color;
     font-weight: 300;
@@ -32,6 +31,20 @@
     padding: 5% 15%;
     button{
         margin: 1em;
+    }
+
+    &.showing{
+        border-top: 1px solid @main-color;
+    }
+
+    &.main-about{
+        border-top: 1px solid @main-color;
+        // border-bottom: 1px solid @main-color;
+        padding: 20px 15%;
+    }
+    &.footer{
+        padding: 4%;
+        border: none;
     }
 }
 .more-section-list{

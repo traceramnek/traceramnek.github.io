@@ -78,6 +78,7 @@
   -o-transition: 0.4s;
 }
 .section-button:hover {
+  cursor: pointer;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -175,6 +176,9 @@
   background-size: 100%;
   /* Keep the image from overlapping sibling elements. */
   z-index: -1;
+}
+.mini-section {
+  background-color: #435069;
 }
 .section-button:hover {
   color: #16385f;

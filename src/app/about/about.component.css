@@ -142,7 +142,6 @@
 }
 .about-section {
   z-index: -1;
-  border-top: 1px solid ghostwhite;
   background-color: #902a2a;
   color: ghostwhite;
   font-weight: 300;
@@ -150,6 +149,17 @@
 }
 .about-section button {
   margin: 1em;
+}
+.about-section.showing {
+  border-top: 1px solid ghostwhite;
+}
+.about-section.main-about {
+  border-top: 1px solid ghostwhite;
+  padding: 20px 15%;
+}
+.about-section.footer {
+  padding: 4%;
+  border: none;
 }
 .more-section-list {
   margin: 1.5em 0;

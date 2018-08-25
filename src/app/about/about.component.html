@@ -8,29 +8,28 @@
   </div>
 </div>
 
-<div class="bio text-center about-section">
+<div class="bio text-center about-section main-about">
   <h2>What do I do?</h2>
-  <br>
-  I'm Kwan S. Holloway and I'm a Multimedia Developer.
-    <p> 
-    I design and program things like games websites, and more. I also
-    do a lot of Front-End Development, UI/UX work, as well as Digital Art.</p>
+  <br> I'm Kwan S. Holloway and I'm a Multimedia Developer.
+  <p>
+    I design and program things like games websites, and more. I also do a lot of Front-End Development, UI/UX work, as well
+    as Digital Art.</p>
 
-    <div class="more-section-list">
-      <div class="section-button" (click)="toggleNavigationSub('interests', $event)">
-        Interests
-      </div>
-      <div class="section-button" (click)="toggleNavigationSub('motivations', $event)">
-          Motivations
-      </div>
-      <div class="section-button" (click)="toggleNavigationSub('facts', $event)">
-          Fun Facts
-      </div>
-
+  <div class="more-section-list">
+    <div class="section-button" (click)="toggleNavigationSub('interests', $event)">
+      Interests
     </div>
+    <div class="section-button" (click)="toggleNavigationSub('motivations', $event)">
+      Motivations
+    </div>
+    <div class="section-button" (click)="toggleNavigationSub('facts', $event)">
+      Fun Facts
+    </div>
+
+  </div>
 </div>
 
- <div class="bio text-center about-section" [@showSection]="navigationSubState.interests">
+<div class="bio text-center about-section" [ngClass]="{'showing': navigationSubState.interests == 'active'}" [@showSection]="navigationSubState.interests">
   <h2>What interests me?</h2>
   <br>
   <p>Games. That's it. Bye.</p>
@@ -39,7 +38,7 @@
   <p>I've got a ton more intetests, but</p>
 </div>
 
- <div class="bio text-center about-section" [@showSection]="navigationSubState.motivations">
+<div class="bio text-center about-section" [ngClass]="{'showing': navigationSubState.motivations == 'active'}" [@showSection]="navigationSubState.motivations">
   <h2>What drives me?</h2>
   <br>
   <p>
@@ -58,10 +57,14 @@
 
 </div>
 
-<div class="bio text-center about-section" [@showSection]="navigationSubState.facts">
+<div class="bio text-center about-section" [ngClass]="{'showing': navigationSubState.facts == 'active'}" [@showSection]="navigationSubState.facts">
   <h2>Fun Facts?</h2>
   <br>
   <p>I've taught myself to be fairly ambidextrous. I love Sherlock Holmes.</p>
   <p>I listen to a lot of music in other languages. I write ciphers in order to decode them later.</p>
-  
+
+</div>
+
+<div class="bio text-center about-section footer">
+  <!-- erer -->
 </div>

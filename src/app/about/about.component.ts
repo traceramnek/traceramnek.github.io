@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
         opacity: '1',
         padding: '*'
       })),
-      transition('inactive => active', animate('500ms ease-in')),
+      transition('inactive => active', animate('500ms 500ms ease-in')),
       transition('active => inactive', animate('500ms ease-out'))
     ])
   ]
@@ -37,15 +37,28 @@ export class AboutComponent implements OnInit {
 
   toggleNavigationSub(menuName: string, event: Event) {
     event.preventDefault();
-    this.navigationSubState.interests = 'inactive';
-    this.navigationSubState.motivations = 'inactive';
-    this.navigationSubState.facts = 'inactive';
+    this.setActiveStates(menuName);
 
     this.navigationSubState[menuName] = (this.navigationSubState[menuName] === 'inactive' ? 'active' : 'inactive');
 
-    if (this.navigationSubState[menuName] == 'active') {
-      window.scrollBy(0, 500);
+  }
+
+  setActiveStates(menuName: string) {
+    switch (menuName) {
+      case 'interests':
+        this.navigationSubState.motivations = 'inactive';
+        this.navigationSubState.facts = 'inactive';
+        break;
+      case 'motivations':
+        this.navigationSubState.facts = 'inactive';
+        this.navigationSubState.interests = 'inactive';
+        break;
+      case 'facts':
+        this.navigationSubState.motivations = 'inactive';
+        this.navigationSubState.interests = 'inactive';
+        break;
     }
+
   }
 
 }
