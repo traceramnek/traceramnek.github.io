@@ -78,6 +78,7 @@
   -o-transition: 0.4s;
 }
 .section-button:hover {
+  cursor: pointer;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -140,6 +141,7 @@
   z-index: -1;
 }
 .about-section {
+  z-index: -1;
   border-top: 1px solid ghostwhite;
   background-color: #902a2a;
   color: ghostwhite;
@@ -156,6 +158,7 @@
   align-items: center;
 }
 .more-section-list .section-button {
+  z-index: 2;
   font-size: 1em;
   margin: 0 1em;
 }

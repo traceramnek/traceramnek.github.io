@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { NavbarModule } from './navbar/navbar.module';
@@ -25,6 +25,7 @@ import { SharedService } from './services/shared.service';
     ProjectsModule,
     ArtworkModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [
