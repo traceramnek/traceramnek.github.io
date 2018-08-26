@@ -8,18 +8,18 @@ import * as $ from 'jquery';
   styleUrls: ['./about.component.less'],
   animations: [
     trigger('showSection', [
-      state('inactive', style({
-        height: '0',
-        opacity: '0',
-        padding: '0 15%',
-      })),
-      state('active', style({
-        height: '*',
-        opacity: '1',
-        padding: '*',
-      })),
-      transition('inactive => active', animate('500ms 500ms ease-in')),
-      transition('active => inactive', animate('350ms ease-out'))
+      // state('inactive', style({
+      //   height: '0',
+      //   opacity: '0',
+      //   padding: '0 15%',
+      // })),
+      // state('active', style({
+      //   height: '*',
+      //   opacity: '1',
+      //   padding: '*',
+      // })),
+      // transition('inactive => active', animate('500ms 500ms ease-in')),
+      // transition('active => inactive', animate('350ms ease-out'))
     ])
   ]
 })
@@ -34,7 +34,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     for (const obj of Object.keys(this.navigationSubState)) {
-      // $('#' + obj).css("display", "none"); // hide all sections;
+      $('#' + obj).css("display", "none"); // hide all sections;
       console.log(obj);
     }
     for (const obj in this.navigationSubState) {
@@ -45,12 +45,15 @@ export class AboutComponent implements OnInit {
   toggleActiveStates(menuName: string, event: Event) {
     event.preventDefault();
     for (const prop in this.navigationSubState) {
-      if (!(menuName == prop)) {
+      if (menuName != prop) {
         this.navigationSubState[prop] = 'inactive';
-        // $('#' + menuName).slideToggle(500);
+        $('#' + prop).hide(500);
+        console.log(prop);
+        console.log(this.navigationSubState[prop]);
+        console.log('hiding ' + prop);
       } else {
-        this.navigationSubState[menuName] = (this.navigationSubState[menuName] === 'inactive' ? 'active' : 'inactive');
-        // $('#' + menuName).slideToggle(500);
+        this.navigationSubState[prop] = (this.navigationSubState[prop] === 'inactive' ? 'active' : 'inactive');
+        $('#' + menuName).slideToggle(500);
         console.log(this.navigationSubState[prop]);
       }
     }
