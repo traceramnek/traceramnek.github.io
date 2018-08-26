@@ -13,14 +13,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  goToAbout() {
-    this.router.navigate(['/about']);
-  }
-  goToProjects() {
-    this.router.navigate(['/projects']);
-  }
-  goToArtwork() {
-    this.router.navigate(['/artwork']);
+  goToPage(route: string) {
+    window.scrollTo(0,0);
+    this.router.navigate([route]);
   }
 
 }

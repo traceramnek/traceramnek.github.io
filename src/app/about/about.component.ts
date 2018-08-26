@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
         opacity: '1',
         padding: '*'
       })),
-      transition('inactive => active', animate('500ms 500ms ease-in')),
+      transition('inactive => active', animate('500ms 650ms ease-in')),
       transition('active => inactive', animate('500ms ease-out'))
     ])
   ]
