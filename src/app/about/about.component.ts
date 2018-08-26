@@ -1,5 +1,6 @@
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-about',
@@ -10,20 +11,20 @@ import { Component, OnInit } from '@angular/core';
       state('inactive', style({
         height: '0',
         opacity: '0',
-        padding: '0 15%'
+        padding: '0 15%',
       })),
       state('active', style({
         height: '*',
         opacity: '1',
-        padding: '*'
+        padding: '*',
       })),
-      transition('inactive => active', animate('500ms 650ms ease-in')),
-      transition('active => inactive', animate('500ms ease-out'))
+      transition('inactive => active', animate('500ms 500ms ease-in')),
+      transition('active => inactive', animate('350ms ease-out'))
     ])
   ]
 })
 export class AboutComponent implements OnInit {
-  navigationSubState: { [menu: string]: string } = {
+  navigationSubState = {
     interests: 'inactive',
     motivations: 'inactive',
     facts: 'inactive'
@@ -32,31 +33,26 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    for (const obj of Object.keys(this.navigationSubState)) {
+      // $('#' + obj).css("display", "none"); // hide all sections;
+      console.log(obj);
+    }
+    for (const obj in this.navigationSubState) {
+      console.log(this.navigationSubState[obj]);
+    }
   }
 
-
-  toggleNavigationSub(menuName: string, event: Event) {
+  toggleActiveStates(menuName: string, event: Event) {
     event.preventDefault();
-    this.setActiveStates(menuName);
-
-    this.navigationSubState[menuName] = (this.navigationSubState[menuName] === 'inactive' ? 'active' : 'inactive');
-
-  }
-
-  setActiveStates(menuName: string) {
-    switch (menuName) {
-      case 'interests':
-        this.navigationSubState.motivations = 'inactive';
-        this.navigationSubState.facts = 'inactive';
-        break;
-      case 'motivations':
-        this.navigationSubState.facts = 'inactive';
-        this.navigationSubState.interests = 'inactive';
-        break;
-      case 'facts':
-        this.navigationSubState.motivations = 'inactive';
-        this.navigationSubState.interests = 'inactive';
-        break;
+    for (const prop in this.navigationSubState) {
+      if (!(menuName == prop)) {
+        this.navigationSubState[prop] = 'inactive';
+        // $('#' + menuName).slideToggle(500);
+      } else {
+        this.navigationSubState[menuName] = (this.navigationSubState[menuName] === 'inactive' ? 'active' : 'inactive');
+        // $('#' + menuName).slideToggle(500);
+        console.log(this.navigationSubState[prop]);
+      }
     }
 
   }

@@ -9,7 +9,6 @@
 }
 
 .bio{
-    background-color: @dark-blue1;
     color: @main-color;
     font-size: 1.5em;
     display: flex;
@@ -21,8 +20,10 @@
 .about-parallax{
     .parallax();
 }
-
-.about-section{
+.main-about{
+    border-top: 1px solid @main-color;
+    // border-bottom: 1px solid @main-color;
+    padding: 20px 15%;
     z-index: -1;
     background-color: @brick-color;
     color: @main-color;
@@ -32,16 +33,25 @@
     button{
         margin: 1em;
     }
+}
+
+.about-section{
+    z-index: -1;
+    background-color: @brick-color;
+    color: @main-color;
+    font-weight: 300;
+    padding: 5% 15%;
+    // opacity: 0;
+    
+    button{
+        margin: 1em;
+    }
 
     &.showing{
+        // opacity: 1;
         border-top: 1px solid @main-color;
     }
 
-    &.main-about{
-        border-top: 1px solid @main-color;
-        // border-bottom: 1px solid @main-color;
-        padding: 20px 15%;
-    }
     &.footer{
         padding: 4%;
         border: none;
