@@ -33,13 +33,7 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    for (const obj of Object.keys(this.navigationSubState)) {
-      $('#' + obj).css("display", "none"); // hide all sections;
-      console.log(obj);
-    }
-    for (const obj in this.navigationSubState) {
-      console.log(this.navigationSubState[obj]);
-    }
+  
   }
 
   toggleActiveStates(menuName: string, event: Event) {
@@ -48,13 +42,9 @@ export class AboutComponent implements OnInit {
       if (menuName != prop) {
         this.navigationSubState[prop] = 'inactive';
         $('#' + prop).hide(500);
-        console.log(prop);
-        console.log(this.navigationSubState[prop]);
-        console.log('hiding ' + prop);
       } else {
         this.navigationSubState[prop] = (this.navigationSubState[prop] === 'inactive' ? 'active' : 'inactive');
         $('#' + menuName).slideToggle(500);
-        console.log(this.navigationSubState[prop]);
       }
     }
 

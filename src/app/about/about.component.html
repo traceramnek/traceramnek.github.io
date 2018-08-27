@@ -29,7 +29,7 @@
   </div>
 </div>
 
-<div class="bio text-center about-section" id="interests" [@showSection]="navigationSubState.interests" [ngClass]="{'showing': navigationSubState.interests == 'active'}">
+<div class="bio text-center about-section" id="interests" [ngClass]="{'showing': navigationSubState.interests == 'active'}">
   <h2>What interests me?</h2>
   <br>
   <p>Games. That's it. Bye.</p>
@@ -37,7 +37,7 @@
     anime, and music.</p>
 </div>
 
-<div class="bio text-center about-section" id="motivations" [@showSection]="navigationSubState.motivations" [ngClass]="{'showing': navigationSubState.motivations == 'active'}">
+<div class="bio text-center about-section" id="motivations" [ngClass]="{'showing': navigationSubState.motivations == 'active'}">
   <h2>What drives me?</h2>
   <br>
   <p>
@@ -56,7 +56,7 @@
 
 </div>
 
-<div class="bio text-center about-section" id="facts" [@showSection]="navigationSubState.facts" [ngClass]="{'showing': navigationSubState.facts == 'active'}">
+<div class="bio text-center about-section" id="facts" [ngClass]="{'showing': navigationSubState.facts == 'active'}">
   <h2>Fun Facts?</h2>
   <br>
   <p>I've taught myself to be fairly ambidextrous. I love Sherlock Holmes.</p>
