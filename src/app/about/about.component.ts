@@ -41,10 +41,10 @@ export class AboutComponent implements OnInit {
     for (const prop in this.navigationSubState) {
       if (menuName != prop) {
         this.navigationSubState[prop] = 'inactive';
-        $('#' + prop).hide(500);
+        $('#' + prop).hide(750);
       } else {
         this.navigationSubState[prop] = (this.navigationSubState[prop] === 'inactive' ? 'active' : 'inactive');
-        $('#' + menuName).slideToggle(500);
+        $('#' + menuName).slideToggle(750);
       }
     }
 
