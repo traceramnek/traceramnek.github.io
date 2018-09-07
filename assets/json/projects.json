@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "title": "B Hive",
+            "url": "https://bhive.bricartsmedia.org",
+            "imgPath": "../../assets/images/bhive_sqr.png"
+        },
+        {
+            "title": "Code Control",
+            "url": "http://rpantaev.com/CodeControl/",
+            "imgPath": "../../assets/images/code_control_2.png"
+        },
+        {
+            "title": "Crypto Fit",
+            "url": "https://github.com/traceramnek/aws-fitbit-competition",
+            "imgPath": "../../assets/images/CryptoFit_sqr.png"
+        },
+        {
+            "title": "Path of the Gamer",
+            "url": "https://traceramnek.github.io/Path-Of-The-Gamer/",
+            "imgPath": "../../assets/images/POTG_Shot.png"
+        }
+    ]
+}
