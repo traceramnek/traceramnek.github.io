@@ -1,0 +1,116 @@
+@import '../../assets/less/variables.less';
+@import '../../assets/less/mixins.less';
+
+// THIS FILE CONTAINS STYLES THAT WILL BE REUSED THROUGHOUT THE WEBSITE
+.page-title{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.page-title-line{
+    font-size: 72px;
+    font-weight: bold;
+
+    // For horizontal lines next to headings
+    &:before,
+    &:after {
+        background-color: @main-color;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        width: 80px;
+    }
+
+    &:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    &:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+}
+
+.main-text{
+    margin-top: 4em;
+    color: @main-color;
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.main-container{
+    height: 100vh;
+    color: @main-color;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    padding-top: 4em;
+    background-color: @overlay-color;
+}
+
+.mini-section{
+    font-weight: 300;
+    border-top: 1px solid @main-color;
+    background-color: @dark-blue1;
+    color: @main-color;
+    
+    padding: 2em;
+    button{
+        margin: 1em;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+}
+
+.section-button{
+    font-size: 1.5em;
+    padding: .5em 2em;
+    border-radius: 50px;
+    background-color: transparent;
+    color: @main-color;
+    border: @main-color 1px solid;
+    // Rules to make background slide in from right
+    .slide-from-left(transparent, @main-color);
+    .setTransition(.4s);
+    &:hover{
+        cursor: pointer;
+        .setTransition(.4s);
+        background-position: bottom left;
+    }
+}
+
+/* PARALLAX STYLES= */
+
+.parallax-wrapper {
+    /* The height needs to be set to a fixed value for the effect to work.
+        * 100vh is the full height of the viewport. */
+    height: 101vh;
+    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+    overflow-x: hidden;
+    /* Enable scrolling on the page. */
+    overflow-y: auto;
+    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+    perspective: 1px;
+}
+
+
+.parallax-section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 101vh;
+
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
