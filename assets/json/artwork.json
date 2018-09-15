@@ -1,24 +1,20 @@
 {
-    "artowrk": [
+    "artwork": [
         {
-            "title": "B Hive",
-            "url": "https://bhive.bricartsmedia.org",
-            "imgPath": "../../assets/images/bhive_sqr.png"
+            "title": "Black Forever",
+            "imgPath": "../../assets/images/black_forever.svg"
         },
         {
-            "title": "Code Control",
-            "url": "http://rpantaev.com/CodeControl/",
-            "imgPath": "../../assets/images/code_control_2.png"
+            "title": "Divided Existence",
+            "imgPath": "../../assets/images/Div_Exist_Square.png"
         },
         {
-            "title": "Crypto Fit",
-            "url": "https://github.com/traceramnek/aws-fitbit-competition",
-            "imgPath": "../../assets/images/CryptoFit_sqr.png"
+            "title": "Collectr",
+            "imgPath": "../../assets/images/CollectibleUIUX.svg"
         },
         {
-            "title": "Path of the Gamer",
-            "url": "https://traceramnek.github.io/Path-Of-The-Gamer/",
-            "imgPath": "../../assets/images/POTG_Shot.png"
+            "title": "Shadow The Hedgehog",
+            "imgPath": "../../assets/images/Shadow_Art_PNG.png"
         }
     ]
 }
