@@ -5,6 +5,63 @@
     .parallax();
 }
 
+.artwork-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: @dark-blue1;
+    color: @main-color;
+    
+    .art-div{
+        color: @main-color;
+        width: 45%;
+        max-width: 400px;
+        max-height: 400px;
+        margin: 1.5em 1.5em;
+        .setTransition(.5s);
+        background-color: @overlay-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &:hover{
+            img{
+                opacity: 0.3;
+            }
+            .img-overlay{
+                opacity: 1;
+                .proj-title, .proj-description, .proj-button{
+                    padding: 0;
+                    // margin-bottom: 1em;
+                }
+            }
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            display: block;
+            .setTransition(.5s);
+        }
+
+    }
+}
+
+.art-title{
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    .setTransition(.5s);
+}
+
+.img-overlay{
+    .setTransition(.5s);
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+}
+
 .bg1::after {
     background-image: url('../../assets/images/FutureCity1.svg');
     background-size: cover;
