@@ -48,6 +48,7 @@
   background-color: rgba(52, 59, 66, 0.4);
 }
 .mini-section {
+  font-weight: 300;
   border-top: 1px solid ghostwhite;
   background-color: #16385f;
   color: ghostwhite;
@@ -55,6 +56,9 @@
 }
 .mini-section button {
   margin: 1em;
+}
+.mini-section p {
+  font-size: 1.5em;
 }
 .section-button {
   font-size: 1.5em;
@@ -74,12 +78,12 @@
   -o-transition: 0.4s;
 }
 .section-button:hover {
+  cursor: pointer;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
-  color: #16385f;
   background-position: bottom left;
 }
 /* PARALLAX STYLES= */
@@ -229,13 +233,6 @@
   opacity: 0;
   position: absolute;
   text-align: center;
-}
-.left-panel {
-  height: 100vh;
-}
-.right-panel {
-  height: 100vh;
-  background-color: ;
 }
 .bg0 {
   background: url('../../assets/images/bhive_long.png') no-repeat;
