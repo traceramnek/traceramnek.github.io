@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from '../services/shared.service';
+import {MatDialog} from '@angular/material';
+import { ArtViewComponent } from './art-view/art-view.component';
+
 
 @Component({
   selector: 'app-artwork',
@@ -10,7 +13,7 @@ export class ArtworkComponent implements OnInit {
   artworks;
   assetUrl = 'assets/json/artwork.json';
 
-  constructor(private sharedService: SharedService) { }
+  constructor(private sharedService: SharedService, private dialog: MatDialog) { }
 
   ngOnInit() {
     this.getArtworks();
@@ -19,8 +22,19 @@ export class ArtworkComponent implements OnInit {
   getArtworks() {
     this.sharedService.getAssetJsonArray(this.assetUrl).subscribe((response => {
       this.artworks = response['artwork'];
-  }));
-    
+    }));
   }
+  
+  openPicDialog(path: string, imgTitle: string) {
+    const artConfig = {
+      width: '700px',
+      height: '80vh',
+      maxHeight: '80vh',
+      data: {imgPath: path, title: imgTitle}
+    }
+
+    const dialogRef = this.dialog.open(ArtViewComponent, artConfig);
+  }
+
 
 }

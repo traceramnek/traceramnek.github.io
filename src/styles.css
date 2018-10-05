@@ -59,6 +59,9 @@
 .mini-section button {
   margin: 1em;
 }
+.mini-section p {
+  font-size: 1.5em;
+}
 .section-button {
   font-size: 1.5em;
   padding: .5em 2em;
@@ -77,12 +80,12 @@
   -o-transition: 0.4s;
 }
 .section-button:hover {
+  cursor: pointer;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
-  color: #16385f;
   background-position: bottom left;
 }
 /* PARALLAX STYLES= */
@@ -110,4 +113,7 @@
 }
 body {
   font-family: 'Lato', sans-serif, 'Trebuchet MS', sans-serif;
+}
+.mat-dialog-container {
+  padding: 0 !important;
 }

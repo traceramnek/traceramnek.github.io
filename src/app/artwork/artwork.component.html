@@ -11,7 +11,7 @@
 <div class="artwork-container">
   
   <div class="art-div" *ngFor="let art of artworks">
-    <img src="{{art.imgPath}}">
+    <img (click)="openPicDialog(art.imgPath, art.title)" src="{{art.imgPath}}">
     <div class="img-overlay">
       <div class="art-title art-bottom">{{art.title}}</div>
     </div>

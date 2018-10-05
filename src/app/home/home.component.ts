@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SharedService } from '../services/shared.service';
 
 @Component({
   selector: 'home-page',
@@ -8,14 +9,13 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private sharedService: SharedService) { }
 
   ngOnInit() {
   }
 
   goToPage(route: string) {
-    window.scrollTo(0,0);
-    this.router.navigate([route]);
+    this.sharedService.navigeteToUrl(route);
   }
 
 }

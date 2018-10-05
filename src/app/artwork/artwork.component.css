@@ -109,6 +109,11 @@
   justify-content: center;
   color: white;
 }
+/* DIALOG STYLES */
+.dialog-header {
+  height: 50px;
+  background-color: #195C68;
+}
 .art-parallax::after {
   /* Display and position the pseudo-element */
   content: " ";
@@ -152,6 +157,7 @@
 }
 .artwork-container .art-div:hover img {
   opacity: 0.3;
+  cursor: pointer;
 }
 .artwork-container .art-div:hover .img-overlay {
   opacity: 1;
