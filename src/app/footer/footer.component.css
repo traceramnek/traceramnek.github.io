@@ -27,5 +27,8 @@
 }
 .copyright {
   margin: 1em 0;
-  opacity: 0.5;
+  opacity: 0.6;
+}
+.copyright p {
+  margin-top: 0.5em;
 }
