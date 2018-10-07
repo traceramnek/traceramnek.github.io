@@ -21,12 +21,12 @@ export class SharedService {
   }
 
   navigeteToUrl(route: string) {
-    // $(document).ready(function() {
-    //   $(".parallax-wrapper").animate({
-    //       scrollTop: $(".parallax-wrapper").height()
-    //     }, 0);
-    //   return false;
-    // });
+    $(document).ready(function() {
+      // $(".parallax-section").animate({
+      //     scrollTop: $(".parallax-section").height()
+      //   }, 0);
+      return false;
+    });
     this.router.navigate([route]);
   }
 

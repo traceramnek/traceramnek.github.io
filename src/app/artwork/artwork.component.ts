@@ -28,7 +28,7 @@ export class ArtworkComponent implements OnInit {
   openPicDialog(path: string, imgTitle: string) {
     const artConfig = {
       width: '700px',
-      height: '80vh',
+      height: '85vh',
       maxHeight: '80vh',
       data: {imgPath: path, title: imgTitle}
     }
