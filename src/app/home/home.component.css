@@ -49,7 +49,6 @@
 }
 .mini-section {
   font-weight: 300;
-  border-top: 1px solid ghostwhite;
   background-color: #16385f;
   color: ghostwhite;
   padding: 2em;
@@ -108,6 +107,11 @@
   align-items: center;
   justify-content: center;
   color: white;
+}
+/* DIALOG STYLES */
+.dialog-header {
+  height: 50px;
+  background-color: #195C68;
 }
 .home-container {
   background-image: url('../../assets/images/kwan_la_sqr.jpg');
@@ -179,6 +183,9 @@
 }
 .mini-section {
   background-color: #435069;
+}
+.mini-section:nth-child(odd) {
+  background-color: #896670;
 }
 .section-button:hover {
   color: #16385f;
