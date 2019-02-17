@@ -5,7 +5,7 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 72px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .page-title-line {
@@ -49,13 +49,15 @@
 }
 .mini-section {
   font-weight: 300;
-  border-top: 1px solid ghostwhite;
   background-color: #16385f;
   color: ghostwhite;
   padding: 2em;
 }
 .mini-section button {
   margin: 1em;
+}
+.mini-section p {
+  font-size: 1.5em;
 }
 .section-button {
   font-size: 1.5em;
@@ -75,12 +77,12 @@
   -o-transition: 0.4s;
 }
 .section-button:hover {
+  cursor: pointer;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
-  color: #16385f;
   background-position: bottom left;
 }
 /* PARALLAX STYLES= */
@@ -105,6 +107,16 @@
   align-items: center;
   justify-content: center;
   color: white;
+}
+/* DIALOG STYLES */
+.dialog-header {
+  height: 50px;
+  background-color: #195C68;
+}
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1em;
+  }
 }
 nav {
   width: 100%;
@@ -150,7 +162,45 @@ nav span a {
   border-radius: 50%;
 }
 .nav-logo {
-  height: 100px;
+  height: 98px;
+  margin: 5px 10px;
+  position: absolute;
+  opacity: 0;
+  animation: fadeInLogo .75s linear forwards;
+  animation-delay: 1.8s;
+}
+@keyframes fadeInLogo {
+  to {
+    opacity: 1;
+  }
+}
+#wingTop,
+#wingLow {
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  animation: wingTopAnim 1s linear forwards;
+}
+#wingTop {
+  animation-delay: 1s;
+}
+#wingLow {
+  animation-delay: 1s;
+}
+#Stroke_Logo {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: wingTopAnim 1s linear forwards;
+  animation-delay: 1s;
+}
+@keyframes wingTopAnim {
+  90% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
 }
 @media (max-width: 480px) {
   nav span {

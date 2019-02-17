@@ -5,7 +5,7 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 72px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .page-title-line {
@@ -112,4 +112,9 @@
 .dialog-header {
   height: 50px;
   background-color: #195C68;
+}
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1em;
+  }
 }
