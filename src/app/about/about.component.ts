@@ -12,6 +12,7 @@ import * as $ from 'jquery';
         height: '0',
         opacity: '0',
         padding: '0 15%',
+        display: 'none'
       })),
       state('active', style({
         height: '*',

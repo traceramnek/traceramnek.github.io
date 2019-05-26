@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 .page-title-line {
-  font-size: 72px;
+  font-size: 8vw;
   font-weight: bold;
 }
 .page-title-line:before,
@@ -20,7 +20,7 @@
   height: 2px;
   position: relative;
   vertical-align: middle;
-  width: 80px;
+  width: 8vw;
 }
 .page-title-line:before {
   right: 0.5em;
@@ -194,4 +194,12 @@
   background-image: url('../../assets/images/brick_light.jpg');
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 480px) {
+  .more-section-list {
+    display: block;
+  }
+  .section-button {
+    margin: 15px 0 !important;
+  }
 }
