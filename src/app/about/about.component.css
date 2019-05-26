@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 .page-title-line {
-  font-size: 8vw;
+  font-size: 6vw;
   font-weight: bold;
 }
 .page-title-line:before,
@@ -117,6 +117,9 @@
   .page-title {
     font-size: 1em;
   }
+  .page-title-line {
+    font-size: 8vw;
+  }
 }
 .bio-pic img {
   width: 20em;
@@ -158,6 +161,11 @@
 }
 .main-about button {
   margin: 1em;
+}
+.about-section-container {
+  background-color: #902a2a;
+  height: 100%;
+  min-height: 400px;
 }
 .about-section {
   z-index: -1;

@@ -5,11 +5,11 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 72px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .page-title-line {
-  font-size: 72px;
+  font-size: 6vw;
   font-weight: bold;
 }
 .page-title-line:before,
@@ -20,7 +20,7 @@
   height: 2px;
   position: relative;
   vertical-align: middle;
-  width: 80px;
+  width: 8vw;
 }
 .page-title-line:before {
   right: 0.5em;
@@ -113,6 +113,14 @@
   height: 50px;
   background-color: #195C68;
 }
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1em;
+  }
+  .page-title-line {
+    font-size: 8vw;
+  }
+}
 .home-container {
   background-image: url('../../assets/images/kwan_la_sqr.jpg');
   background-size: cover;
@@ -196,7 +204,7 @@
   background-position: bottom;
 }
 .bg2::after {
-  background-image: url('../../assets/images/bhive_sqr.png');
+  background-image: url('../../assets/images/fountain.jpg');
   background-size: cover;
   background-position: bottom;
 }
