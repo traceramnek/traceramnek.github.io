@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 .page-title-line {
-  font-size: 8vw;
+  font-size: 6vw;
   font-weight: bold;
 }
 .page-title-line:before,
@@ -116,5 +116,8 @@
 @media (max-width: 480px) {
   .page-title {
     font-size: 1em;
+  }
+  .page-title-line {
+    font-size: 8vw;
   }
 }
