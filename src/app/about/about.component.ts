@@ -8,24 +8,24 @@ import * as $ from 'jquery';
   styleUrls: ['./about.component.less'],
   animations: [
     trigger('showSection', [
-      // state('inactive', style({
-      //   height: '0',
-      //   opacity: '0',
-      //   padding: '0 15%',
-      // })),
-      // state('active', style({
-      //   height: '*',
-      //   opacity: '1',
-      //   padding: '*',
-      // })),
-      // transition('inactive => active', animate('500ms 500ms ease-in')),
-      // transition('active => inactive', animate('350ms ease-out'))
+      state('inactive', style({
+        height: '0',
+        opacity: '0',
+        padding: '0 15%',
+      })),
+      state('active', style({
+        height: '*',
+        opacity: '1',
+        padding: '*',
+      })),
+      transition('inactive => active', animate('500ms 500ms ease-in')),
+      transition('active => inactive', animate('350ms ease-out'))
     ])
   ]
 })
 export class AboutComponent implements OnInit {
   navigationSubState = {
-    interests: 'inactive',
+    interests: 'active',
     motivations: 'inactive',
     facts: 'inactive'
   };
@@ -37,14 +37,14 @@ export class AboutComponent implements OnInit {
   }
 
   toggleActiveStates(menuName: string, event: Event) {
-    event.preventDefault();
+    // event.preventDefault();
     for (const prop in this.navigationSubState) {
       if (menuName != prop) {
         this.navigationSubState[prop] = 'inactive';
-        $('#' + prop).hide(750);
+        // $('#' + prop).fadeOut(250);
       } else {
         this.navigationSubState[prop] = (this.navigationSubState[prop] === 'inactive' ? 'active' : 'inactive');
-        $('#' + menuName).slideToggle(750);
+        // $('#' + menuName).fadeIn(750);
       }
     }
 

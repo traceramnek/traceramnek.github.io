@@ -10,10 +10,12 @@ nav{
     z-index: 4;
     position: relative;
     font-weight: 400;
+    display: flex;
  
     span{
+        position: absolute;
+        right: 0;
         margin-top: 1em;
-        float: right;
         padding: 1.5em;
         .setTransition(.2s);
 
@@ -53,6 +55,10 @@ nav{
     opacity: 0;
     animation: fadeInLogo .75s linear forwards;
     animation-delay: 1.8s;
+}
+
+svg{
+    height: 100px;
 }
 
 @keyframes fadeInLogo {
@@ -95,13 +101,10 @@ nav{
 
 
 @media (max-width: @screen-xs) {
-    nav{
-        span{
-            float: none;
-            padding: 0;
-        }
-    }
     .nav-logo{
        height: 74px; 
     } 
+    svg{
+        height: 74px;
+    }
 }

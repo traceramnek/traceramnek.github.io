@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 .page-title-line {
-  font-size: 72px;
+  font-size: 8vw;
   font-weight: bold;
 }
 .page-title-line:before,
@@ -20,7 +20,7 @@
   height: 2px;
   position: relative;
   vertical-align: middle;
-  width: 80px;
+  width: 8vw;
 }
 .page-title-line:before {
   right: 0.5em;

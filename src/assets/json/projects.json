@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "B Hive",
-            "url": "https://bhive.bricartsmedia.org",
+            "url": "https://bhive.bricartsmedia.org:8443",
             "imgPath": "../../assets/images/bhive_sqr.png"
         },
         {

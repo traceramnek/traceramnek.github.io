@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 .page-title-line {
-  font-size: 72px;
+  font-size: 6vw;
   font-weight: bold;
 }
 .page-title-line:before,
@@ -20,7 +20,7 @@
   height: 2px;
   position: relative;
   vertical-align: middle;
-  width: 80px;
+  width: 8vw;
 }
 .page-title-line:before {
   right: 0.5em;
@@ -125,10 +125,12 @@ nav {
   z-index: 4;
   position: relative;
   font-weight: 400;
+  display: flex;
 }
 nav span {
+  position: absolute;
+  right: 0;
   margin-top: 1em;
-  float: right;
   padding: 1.5em;
   transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -169,6 +171,9 @@ nav span a {
   animation: fadeInLogo .75s linear forwards;
   animation-delay: 1.8s;
 }
+svg {
+  height: 100px;
+}
 @keyframes fadeInLogo {
   to {
     opacity: 1;
@@ -203,11 +208,10 @@ nav span a {
   }
 }
 @media (max-width: 480px) {
-  nav span {
-    float: none;
-    padding: 0;
-  }
   .nav-logo {
+    height: 74px;
+  }
+  svg {
     height: 74px;
   }
 }

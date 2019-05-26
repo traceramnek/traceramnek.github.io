@@ -5,7 +5,7 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 72px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .page-title-line {
@@ -49,7 +49,6 @@
 }
 .mini-section {
   font-weight: 300;
-  border-top: 1px solid ghostwhite;
   background-color: #16385f;
   color: ghostwhite;
   padding: 2em;
@@ -109,6 +108,16 @@
   justify-content: center;
   color: white;
 }
+/* DIALOG STYLES */
+.dialog-header {
+  height: 50px;
+  background-color: #195C68;
+}
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1em;
+  }
+}
 .bio-pic img {
   width: 20em;
   height: 20em;
@@ -141,12 +150,11 @@
 }
 .main-about {
   border-top: 1px solid ghostwhite;
-  padding: 20px 15%;
   z-index: -1;
   background-color: #902a2a;
   color: ghostwhite;
   font-weight: 300;
-  padding: 5% 15%;
+  padding: 2% 15%;
 }
 .main-about button {
   margin: 1em;

@@ -2,7 +2,7 @@
   <div class="overlay">
     <div class="main-text">
       <h3>About Me</h3>
-      <h1 class="page-title-line">Delve into my mind</h1>
+      <h1 class="page-title-line">Enter my mind</h1>
     </div>
 
   </div>
@@ -10,11 +10,9 @@
 
 <div class="bio text-center main-about">
   <h2>What do I do?</h2>
-  <br> I'm Kwan S. Holloway and I'm a Multimedia Developer.
-  <p>
-    I design and program things like games websites, and more. I also do a lot of Front-End Development, UI/UX work, as well
-    as Digital Art.</p>
-
+  <br> I'm Kwan S. Holloway and I'm a Multimedia Developer!
+  <p>What is that, you ask? Well I write code, design interfaces, create digital art, and much more.</p>
+  <p>I'm a multifaceted person who works on things ranging from websites, to games, to UX/UI Design.</p>
   <div class="more-section-list">
     <div class="section-button" (click)="toggleActiveStates('interests', $event)">
       Interests
@@ -29,40 +27,49 @@
   </div>
 </div>
 
-<div class="bio text-center about-section" id="interests" [ngClass]="{'showing': navigationSubState.interests == 'active'}">
-  <h2>What interests me?</h2>
-  <br>
-  <p>Games. That's it. Bye.</p>
-  <p>Ok no, but I am in love with video games and am constantly playing them. I also love philosphy, digital art, parkour,
-    anime, and music.</p>
+<div style="background-color: #902a2a; height: 350px;">
+  <div class="bio text-center about-section" id="interests" [@showSection]="navigationSubState.interests">
+    <h2>What interests me?</h2>
+    <br>
+    <p>Games. That's it. Bye.</p>
+    <p>Ok no, but I am in love with video games and am constantly playing them.</p>
+    <p>I'm into creating art of digital art in various forms, pixel based or vector based on most occasions.</p>
+    <p>I also love philosophy, psychology, and memes.</p>
+  </div>
+
+  <div class="bio text-center about-section" id="motivations" [@showSection]="navigationSubState.motivations">
+    <h2>What drives me?</h2>
+    <br>
+    <p>
+      I'm driven by a yearning to impact other's lives, whether it be by providing a solution to a problem via a web
+      app, or speaking
+      on a panel about my expereince.
+    </p>
+    <p>
+      I'm also motivated by representation. The vast majority of media is portrayed through a certain lens, and it's my
+      goal to
+      create more media through new, lesser spoken lenses.
+    </p>
+
+    <p>
+      And the third thing that drives me is a want to have a fun and interesting life. I want to be creative, design
+      cool sites,
+      make fun games, and enjoy life while I'm at it.
+    </p>
+
+  </div>
+
+  <div class="bio text-center about-section" id="facts" [@showSection]="navigationSubState.facts">
+    <h2>Fun Facts?</h2>
+    <br>
+    <p>I've taught myself to be fairly ambidextrous. I love Sherlock Holmes.</p>
+    <p>I listen to a lot of music in other languages.
+      I write ciphers in order to decode them later.
+    </p>
+  </div>
 </div>
 
-<div class="bio text-center about-section" id="motivations" [ngClass]="{'showing': navigationSubState.motivations == 'active'}">
-  <h2>What drives me?</h2>
-  <br>
-  <p>
-    I'm driven by a yearning to impact other's lives, whether it be by providing a solution to a problem via a web app, or speaking
-    on a panel about my expereince.
-  </p>
-  <p>
-    I'm also motivated by representation. The vast majority of media is portrayed through a certain lens, and it's my goal to
-    create more media through new, lesser spoken lenses.
-  </p>
 
-  <p>
-    And the third thing that drives me is a want to have a fun and interesting life. I want to be creative, design cool sites,
-    make fun games, and enjoy life while I'm at it.
-  </p>
-
-</div>
-
-<div class="bio text-center about-section" id="facts" [ngClass]="{'showing': navigationSubState.facts == 'active'}">
-  <h2>Fun Facts?</h2>
-  <br>
-  <p>I've taught myself to be fairly ambidextrous. I love Sherlock Holmes.</p>
-  <p>I listen to a lot of music in other languages. I write ciphers in order to decode them later.</p>
-
-</div>
 
 <div class="bio text-center about-section footer">
   <!-- er -->
