@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   }
 
   goToPage(route: string) {
-    this.sharedService.navigeteToUrl(route);
+    this.sharedService.navigateToUrl(route);
   }
 
 }

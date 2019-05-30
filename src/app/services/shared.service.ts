@@ -20,13 +20,15 @@ export class SharedService {
     return this.http.get<string>(assetUrl);
   }
 
-  navigeteToUrl(route: string) {
-    $(document).ready(function() {
-      // $(".parallax-section").animate({
-      //     scrollTop: $(".parallax-section").height()
-      //   }, 0);
-      return false;
+  navigateToUrl(route: string) {
+    $(document).ready(function () {
+      $(".parallax-wrapper").animate({
+        // animate scroll top with jquery to scroll to the top of the page on navigation
+        // use negative height to go upward insead of downward
+        scrollTop: -($(".parallax-wrapper").height()) 
+      }, 0);
     });
+    
     this.router.navigate([route]);
   }
 
