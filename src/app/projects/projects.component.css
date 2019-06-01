@@ -5,11 +5,11 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 72px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .page-title-line {
-  font-size: 72px;
+  font-size: 6vw;
   font-weight: bold;
 }
 .page-title-line:before,
@@ -20,7 +20,7 @@
   height: 2px;
   position: relative;
   vertical-align: middle;
-  width: 80px;
+  width: 8vw;
 }
 .page-title-line:before {
   right: 0.5em;
@@ -49,7 +49,6 @@
 }
 .mini-section {
   font-weight: 300;
-  border-top: 1px solid ghostwhite;
   background-color: #16385f;
   color: ghostwhite;
   padding: 2em;
@@ -113,6 +112,14 @@
 .dialog-header {
   height: 50px;
   background-color: #195C68;
+}
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1em;
+  }
+  .page-title-line {
+    font-size: 8vw;
+  }
 }
 .projects-section {
   color: ghostwhite;
@@ -191,7 +198,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #16385f;
+  background-color: #3a5369;
   color: ghostwhite;
 }
 .project-container .proj-div {
@@ -258,4 +265,9 @@
 .bg3 {
   background: url('../../assets/images/potg_long.png') no-repeat center;
   background-size: cover;
+}
+@media (max-width: 480px) {
+  .proj-button a {
+    font-size: 1.5rem;
+  }
 }
