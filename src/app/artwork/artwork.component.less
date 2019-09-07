@@ -15,8 +15,8 @@
     .art-div{
         color: @main-color;
         width: 45%;
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 500px;
+        max-height: 450px;
         margin: 1.5em 1.5em;
         .setTransition(.5s);
         display: flex;
@@ -66,4 +66,15 @@
     background-image: url('../../assets/images/FutureCity1.svg');
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width: @screen-xs) {
+    .artwork-container{
+        .art-div{
+            width: 100%;
+            max-width: none;
+            max-height: none;
+            margin: 0;
+        }
+    }
 }

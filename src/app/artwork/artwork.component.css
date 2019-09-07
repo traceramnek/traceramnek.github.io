@@ -5,11 +5,11 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 72px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .page-title-line {
-  font-size: 72px;
+  font-size: 6vw;
   font-weight: bold;
 }
 .page-title-line:before,
@@ -20,7 +20,7 @@
   height: 2px;
   position: relative;
   vertical-align: middle;
-  width: 80px;
+  width: 8vw;
 }
 .page-title-line:before {
   right: 0.5em;
@@ -49,7 +49,6 @@
 }
 .mini-section {
   font-weight: 300;
-  border-top: 1px solid ghostwhite;
   background-color: #16385f;
   color: ghostwhite;
   padding: 2em;
@@ -114,6 +113,14 @@
   height: 50px;
   background-color: #195C68;
 }
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1em;
+  }
+  .page-title-line {
+    font-size: 8vw;
+  }
+}
 .art-parallax::after {
   /* Display and position the pseudo-element */
   content: " ";
@@ -141,8 +148,8 @@
 .artwork-container .art-div {
   color: ghostwhite;
   width: 45%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 450px;
   margin: 1.5em 1.5em;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -200,4 +207,12 @@
   background-image: url('../../assets/images/FutureCity1.svg');
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 480px) {
+  .artwork-container .art-div {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+  }
 }
