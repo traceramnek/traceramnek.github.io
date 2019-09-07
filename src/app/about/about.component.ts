@@ -19,7 +19,7 @@ import * as $ from 'jquery';
         opacity: '1',
         padding: '*',
       })),
-      transition('inactive => active', animate('500ms 500ms ease-in')),
+      transition('inactive => active', animate('350ms 350ms ease-in')),
       transition('active => inactive', animate('350ms ease-out'))
     ])
   ]
@@ -34,21 +34,17 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  
+
   }
 
   toggleActiveStates(menuName: string, event: Event) {
-    // event.preventDefault();
     for (const prop in this.navigationSubState) {
-      if (menuName != prop) {
+      if (menuName != prop && this.navigationSubState[prop] === 'active') {
         this.navigationSubState[prop] = 'inactive';
-        // $('#' + prop).fadeOut(250);
       } else {
-        this.navigationSubState[prop] = (this.navigationSubState[prop] === 'inactive' ? 'active' : 'inactive');
-        // $('#' + menuName).fadeIn(750);
+        this.navigationSubState[menuName] = 'active';
       }
     }
-
   }
 
 }

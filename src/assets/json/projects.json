@@ -3,22 +3,26 @@
         {
             "title": "B Hive",
             "url": "https://bhive.bricartsmedia.org:8443",
-            "imgPath": "../../assets/images/bhive_sqr.png"
+            "imgPath": "../../assets/images/bhive_sqr.png",
+            "summary": "B Hive is a web app developed for BRIC, a non-profit organization, which allows users to upload their video content to their website from anywhere and any device. This automated and sped up their proceses, allowing them to grow their brand, reach more users, and get more content on their site."
         },
         {
             "title": "Code Control",
             "url": "http://rpantaev.com/CodeControl/",
-            "imgPath": "../../assets/images/code_control_2.png"
+            "imgPath": "../../assets/images/code_control_2.png",
+            "summary": "Code Control is an educational coding game meant to help intro CS students hone their coding ability. The game has been successful and has been expanded upon by future generations of students dedicated to making coding more fun and engaging to learn."
         },
         {
             "title": "Crypto Fit",
             "url": "https://github.com/traceramnek/aws-fitbit-competition",
-            "imgPath": "../../assets/images/CryptoFit_sqr.png"
+            "imgPath": "../../assets/images/CryptoFit_sqr.png",
+            "summary": "Crypto Fit was a small hackathon project based around encouraging users to stay fit by betting pools of cryptocurrency and participating in athletic events for a chance to win a piece of the overall pool. Crypto Fit won 2 awards at Angelhack NYC 2018."
         },
         {
             "title": "Path of the Gamer",
             "url": "https://traceramnek.github.io/Path-Of-The-Gamer/",
-            "imgPath": "../../assets/images/POTG_Shot.png"
+            "imgPath": "../../assets/images/POTG_Shot.png",
+            "summary": "Path of the Gamer is a small and simple educational wedsite about the game design process. Meant to give some insight to those who want to learn more about what it takes to make a small to medium scale video game."
         }
     ]
 }

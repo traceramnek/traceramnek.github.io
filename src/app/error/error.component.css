@@ -5,11 +5,11 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 72px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .page-title-line {
-  font-size: 72px;
+  font-size: 6vw;
   font-weight: bold;
 }
 .page-title-line:before,
@@ -20,7 +20,7 @@
   height: 2px;
   position: relative;
   vertical-align: middle;
-  width: 80px;
+  width: 8vw;
 }
 .page-title-line:before {
   right: 0.5em;
@@ -49,7 +49,6 @@
 }
 .mini-section {
   font-weight: 300;
-  border-top: 1px solid ghostwhite;
   background-color: #16385f;
   color: ghostwhite;
   padding: 2em;
@@ -114,21 +113,31 @@
   height: 50px;
   background-color: #195C68;
 }
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1em;
+  }
+  .page-title-line {
+    font-size: 8vw;
+  }
+}
 .error-container {
   height: 101vh;
-  background-color: #06a9b4;
+  background-color: #276175;
   color: ghostwhite;
   padding-top: 6em;
+  display: flex;
+  justify-content: center;
   background-image: url('../../assets/images/Custom_404.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .error-container a {
   text-decoration: none;
 }
 .error-content {
   position: absolute;
-  left: 40%;
   bottom: 10%;
 }
 .error-title {
@@ -161,6 +170,6 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  color: #06a9b4;
+  color: #276175;
   background-position: bottom left;
 }
