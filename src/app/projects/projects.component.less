@@ -6,9 +6,9 @@
 }
 
 .proj-landing{
-    background-image: url('../../assets/images/chryssler.jpg');
+    background-image: url('../../assets/images/highline_sunset.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 
 
@@ -18,9 +18,9 @@
 }
 
 .bg-main::after {
-    background-image: url('../../assets/images/chryssler.jpg');
+    background-image: url('../../assets/images/highline_sunset.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 
 .proj-blurb{
@@ -64,7 +64,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: @slate-blue;
+    background-color: @slate-gold;
     color: @main-color;
     
     .proj-div{
@@ -137,12 +137,24 @@
         }
     }
 
+    .proj-title{
+        margin-top: 15px;
+    }
+
+    .proj-summary{
+        padding: 20px 30px 25px 30px;
+        font-size: 1.3em;
+        line-height: 30px;
+        opacity: 0.85;
+    }
+
     .project-container{
         .proj-div{
             width: 100%;
             max-width: none;
             max-height: none;
             margin: 0;
+            height: 400px;
         }
     }
 }

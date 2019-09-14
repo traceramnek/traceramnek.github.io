@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from '../services/shared.service';
-import {MatDialog} from '@angular/material';
+import { MatDialog } from '@angular/material';
 import { ArtViewComponent } from './art-view/art-view.component';
 
 
@@ -24,13 +24,12 @@ export class ArtworkComponent implements OnInit {
       this.artworks = response['artwork'];
     }));
   }
-  
+
   openPicDialog(path: string, imgTitle: string) {
     const artConfig = {
       width: '700px',
-      height: '85vh',
       maxHeight: '80vh',
-      data: {imgPath: path, title: imgTitle}
+      data: { imgPath: path, title: imgTitle }
     }
 
     const dialogRef = this.dialog.open(ArtViewComponent, artConfig);
