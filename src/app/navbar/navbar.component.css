@@ -45,7 +45,7 @@
   height: 100%;
   width: 100%;
   padding-top: 4em;
-  background-color: rgba(52, 59, 66, 0.4);
+  background-color: rgba(52, 59, 66, 0.25);
 }
 .mini-section {
   font-weight: 300;
@@ -61,7 +61,7 @@
 }
 .section-button {
   font-size: 1.5em;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   border-radius: 50px;
   background-color: transparent;
   color: ghostwhite;
@@ -117,6 +117,9 @@
   .page-title {
     font-size: 1em;
   }
+  .page-title-line {
+    font-size: 8vw;
+  }
 }
 nav {
   width: 100%;
@@ -164,15 +167,15 @@ nav span a {
   border-radius: 50%;
 }
 .nav-logo {
-  height: 98px;
+  height: 70px;
   margin: 5px 10px;
   position: absolute;
   opacity: 0;
-  animation: fadeInLogo .75s linear forwards;
+  animation: fadeInLogo 0.75s linear forwards;
   animation-delay: 1.8s;
 }
 svg {
-  height: 100px;
+  height: 70px;
 }
 @keyframes fadeInLogo {
   to {
@@ -209,9 +212,10 @@ svg {
 }
 @media (max-width: 480px) {
   .nav-logo {
-    height: 74px;
+    height: 60px;
+    margin: 15px 10px;
   }
   svg {
-    height: 74px;
+    height: 60px;
   }
 }

@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "title": "Jammify",
+            "url": "https://jammify.surge.sh",
+            "imgPath": "../../assets/images/Jammify_2.png",
+            "summary": "Jammify! is a small React web app that allows users to create playlists, name them, and add them to their Spotify accounts using the Spotify API. It's responsive for mobile devices too!"
+        },
+        {
             "title": "B Hive",
             "url": "https://bhive.bricartsmedia.org:8443",
             "imgPath": "../../assets/images/bhive_sqr.png",
@@ -11,12 +17,6 @@
             "url": "http://rpantaev.com/CodeControl/",
             "imgPath": "../../assets/images/code_control_2.png",
             "summary": "Code Control is an educational coding game meant to help intro CS students hone their coding ability. The game has been successful and has been expanded upon by future generations of students dedicated to making coding more fun and engaging to learn."
-        },
-        {
-            "title": "Crypto Fit",
-            "url": "https://github.com/traceramnek/aws-fitbit-competition",
-            "imgPath": "../../assets/images/CryptoFit_sqr.png",
-            "summary": "Crypto Fit was a small hackathon project based around encouraging users to stay fit by betting pools of cryptocurrency and participating in athletic events for a chance to win a piece of the overall pool. Crypto Fit won 2 awards at Angelhack NYC 2018."
         },
         {
             "title": "Path of the Gamer",

@@ -45,7 +45,7 @@
   height: 100%;
   width: 100%;
   padding-top: 4em;
-  background-color: rgba(52, 59, 66, 0.4);
+  background-color: rgba(52, 59, 66, 0.25);
 }
 .mini-section {
   font-weight: 300;
@@ -61,7 +61,7 @@
 }
 .section-button {
   font-size: 1.5em;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   border-radius: 50px;
   background-color: transparent;
   color: ghostwhite;
@@ -201,15 +201,15 @@
 .project-container .proj-div {
   color: ghostwhite;
   width: 45%;
-  max-width: 500px;
   max-height: 450px;
+  max-width: 450px;
   margin: 1.5em 1.5em;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  background-color: rgba(52, 59, 66, 0.4);
+  background-color: rgba(52, 59, 66, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,6 +236,11 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+}
+.bg-img {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
 }
 .img-overlay {
   transition: 0.5s;

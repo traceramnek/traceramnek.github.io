@@ -14,15 +14,18 @@
 
     <div class="proj-div" *ngFor="let proj of projects">
       <img src="{{proj.imgPath}}">
-      <div class="img-overlay">
-        <div class="proj-title proj-bottom">{{proj.title}}</div>
-        <div class="proj-summary">
-          {{proj.summary}}
+      <!-- <div class="bg-img" [style.background]="'url(' + proj.imgPath + ')'"> -->
+        <div class="img-overlay">
+          <div class="proj-title proj-bottom">{{proj.title}}</div>
+          <div class="proj-summary">
+            {{proj.summary}}
+          </div>
+          <div class="proj-button proj-top">
+            <a href="{{proj.url}}" target="_blank" class="section-button">Check it out</a>
+          </div>
         </div>
-        <div class="proj-button proj-top">
-          <a href="{{proj.url}}" target="_blank" class="section-button">Check it out</a>
-        </div>
-      </div>
+      <!-- </div> -->
+
     </div>
 
   </div>

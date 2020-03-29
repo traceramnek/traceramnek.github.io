@@ -45,7 +45,7 @@
   height: 100%;
   width: 100%;
   padding-top: 4em;
-  background-color: rgba(52, 59, 66, 0.4);
+  background-color: rgba(52, 59, 66, 0.25);
 }
 .mini-section {
   font-weight: 300;
@@ -121,10 +121,21 @@
     font-size: 8vw;
   }
 }
+.bio-pic {
+  margin: auto 50px auto 0;
+}
 .bio-pic img {
-  width: 20em;
-  height: 20em;
+  width: 215px;
+  height: 215px;
   border-radius: 50%;
+}
+.bio-blurb {
+  text-align: left;
+}
+.bio-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 .bio {
   color: ghostwhite;
@@ -152,7 +163,6 @@
   z-index: -1;
 }
 .main-about {
-  border-top: 1px solid ghostwhite;
   z-index: -1;
   background-color: #902a2a;
   color: ghostwhite;
@@ -168,11 +178,12 @@
   min-height: 400px;
 }
 .about-section {
+  text-align: left;
   z-index: -1;
   background-color: #902a2a;
   color: ghostwhite;
   font-weight: 300;
-  padding: 5% 15%;
+  padding: 0 15%;
 }
 .about-section button {
   margin: 1em;
@@ -204,6 +215,9 @@
   background-position: center;
 }
 @media (max-width: 480px) {
+  .bio-container {
+    flex-wrap: wrap;
+  }
   .more-section-list {
     display: block;
   }

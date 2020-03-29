@@ -1,11 +1,22 @@
 @import '../../assets/less/k-styles.less';
 
 .bio-pic{
+    margin: auto 50px auto 0;
     img{
-        width: 20em;
-        height: 20em;
+        width: 215px;
+        height: 215px;
         border-radius: 50%;
     }
+}
+
+.bio-blurb{
+    text-align: left;
+}
+
+.bio-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .bio{
@@ -21,7 +32,6 @@
     .parallax();
 }
 .main-about{
-    border-top: 1px solid @main-color;
     // border-bottom: 1px solid @main-color;
     z-index: -1;
     background-color: @brick-color;
@@ -41,11 +51,12 @@
 }
 
 .about-section{
+    text-align: left;
     z-index: -1;
     background-color: @brick-color;
     color: @main-color;
     font-weight: 300;
-    padding: 5% 15%;
+    padding: 0 15%;
     // opacity: 0;
     
     button{
@@ -85,6 +96,9 @@
 }
 
 @media (max-width: @screen-xs) {
+    .bio-container{
+        flex-wrap: wrap;
+    }
     .more-section-list{
         display: block;
     }
