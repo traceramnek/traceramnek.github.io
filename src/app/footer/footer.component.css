@@ -5,29 +5,48 @@
 	to the hover state of the apecified element
 */
 .footer-container {
-  background-color: #333333;
+  background-color: #195C68;
   color: ghostwhite;
+}
+.social-icons {
+  padding: 1rem;
 }
 .social-icons a {
   color: ghostwhite;
   text-decoration: none;
+  transition: 0.5;
+  -webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
 }
 .social-icons i {
-  margin: 1em;
+  margin: 0 1rem;
   height: 45px;
   width: 45px;
-  font-size: 1.5em;
+  font-size: 2rem;
   border: 1px solid ghostwhite;
   border-radius: 50%;
-  padding: .5em;
+  padding: 1rem;
+  transition: 0.5;
+  -webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
 }
 .social-icons i:hover {
   background-color: ghostwhite;
   color: #333333;
+  transition: 0.5;
+  -webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
 }
 .copyright {
-  margin: 1em 0;
-  opacity: 0.6;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 .copyright p {
   margin-top: 0.5em;

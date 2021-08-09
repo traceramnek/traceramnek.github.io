@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SharedService } from '../services/shared.service';
+import { KUtils } from '../util/k-utils';
 
 @Component({
   selector: 'home-page',
@@ -16,6 +17,30 @@ export class HomeComponent implements OnInit {
 
   goToPage(route: string) {
     this.sharedService.navigateToUrl(route);
+  }
+
+  scrollToElem(id){
+    KUtils.scrollElemIntoView(id);
+  }
+
+  adjustDivs(event) {
+    let motionDiv = document.getElementById('id-motion-container');
+    let leftDiv = document.getElementById('id-left-div');
+    let rightDiv = document.getElementById('id-right-div');
+
+    leftDiv.style.width = 'calc(100% - ' + event.clientX + 'px';
+    leftDiv.style.fontSize = (event.clientX / motionDiv.clientWidth) * 100 + 300 + '%';
+    rightDiv.style.width = event.clientX + 'px';
+    rightDiv.style.fontSize = ((motionDiv.clientWidth - event.clientX) / motionDiv.clientWidth) * 100 + 300 + '%';
+
+    if(leftDiv.clientWidth > rightDiv.clientWidth){
+      leftDiv.style.zIndex = '2';
+      rightDiv.style.zIndex = '1';
+    } else {
+      rightDiv.style.zIndex = '2';
+      leftDiv.style.zIndex = '1';
+    }
+
   }
 
 }

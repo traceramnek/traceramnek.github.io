@@ -6,17 +6,17 @@
 nav{
     width: 100%;
     height: 100px;
-    margin-bottom: -7.5em;
+    margin-bottom: 0;
     z-index: 4;
-    position: relative;
+    position: absolute;
     font-weight: 400;
     display: flex;
  
     span{
         position: absolute;
         right: 0;
-        margin-top: 1em;
-        padding: 1.5em;
+        margin-top: 1rem;
+        padding: 1.5rem;
         .setTransition(.2s);
 
         //Fade entire Nav on hover, and highlight a selection on focus hover
@@ -30,8 +30,9 @@ nav{
         }
 
         a{
+            font-size: 1.5rem;
             color: @main-color;
-            margin: 1em 1em;
+            margin: 1em 1rem;
             text-transform: uppercase;
             .setTransition(.2s);
             text-decoration: none;

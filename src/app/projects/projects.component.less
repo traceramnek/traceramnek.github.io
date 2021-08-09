@@ -64,6 +64,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
     background-color: @slate-gold;
     color: @main-color;
     
@@ -79,6 +80,10 @@
         justify-content: center;
         align-items: center;
         position: relative;
+
+        &.proj-div-right{
+            margin-left: 50%;
+        }
 
         &:hover{
             img{

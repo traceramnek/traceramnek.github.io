@@ -8,9 +8,19 @@
   font-size: 1.5em;
   font-weight: bold;
 }
+.landing-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .page-title-line {
   font-size: 6vw;
-  font-weight: bold;
+  font-weight: 500;
 }
 .page-title-line:before,
 .page-title-line:after {
@@ -61,7 +71,7 @@
 }
 .section-button {
   font-size: 1.5em;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   border-radius: 50px;
   background-color: transparent;
   color: ghostwhite;
@@ -91,9 +101,7 @@
         * 100vh is the full height of the viewport. */
   height: 101vh;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
   /* Enable scrolling on the page. */
-  overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 1px;
 }
@@ -107,6 +115,29 @@
   align-items: center;
   justify-content: center;
   color: white;
+}
+.motion-container {
+  display: flex;
+  height: 100vh;
+}
+.left-motion-div,
+.right-motion-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.left-motion-div {
+  width: 100%;
+  background-color: teal;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+.right-motion-div {
+  width: 100%;
+  background-color: #a31455;
+  justify-content: flex-end;
+  padding-right: 30px;
 }
 /* DIALOG STYLES */
 .dialog-header {

@@ -2,34 +2,43 @@
 @import '../../assets/less/mixins.less';
 
 .footer-container{
-    background-color: @charcoal-color;
+    background-color: @teal-color;
     color: @main-color;
 }
 
 .social-icons{
+    padding: 1rem;
+
     a{
         color: @main-color;
         text-decoration: none;
+        .setTransition(.5);
+
     }
     i{
-        margin: 1em;
+        margin: 0 1rem;
         height: 45px;
         width: 45px;
-        font-size: 1.5em;
+        font-size: 2rem;
         border: 1px solid @main-color;
         border-radius: 50%;
-        padding: .5em;
+        padding: 1rem;
+        .setTransition(.5);
+
         &:hover{
             background-color: @main-color;
             color: @charcoal-color;
+            .setTransition(.5);
+
         }
     }
 
 }
 
 .copyright{
-    margin: 1em 0;
-    opacity: 0.6;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 200;
 
     p{
         margin-top: 0.5em;

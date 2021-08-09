@@ -11,10 +11,14 @@
 
 
   <div class="project-container">
-
-    <div class="proj-div" *ngFor="let proj of projects">
-      <img src="{{proj.imgPath}}">
-      <!-- <div class="bg-img" [style.background]="'url(' + proj.imgPath + ')'"> -->
+    <ng-container *ngFor="let proj of projects; let i = index;">
+      <div [attr.data-aos]="(i % 2 ==1) ? 'slide-left' : 'slide-right'" data-aos-once="true" class="proj-div col-md-6"
+        [ngClass]="{'proj-div-right': (i % 2 == 1)}">
+        <img src="{{proj.imgPath}}">
+        <!-- <div class="bg-img" [style.background]="'url(' + proj.imgPath + ')'"> -->
+        <!-- </div> -->
+      </div>
+      <div class="col-md-6">
         <div class="img-overlay">
           <div class="proj-title proj-bottom">{{proj.title}}</div>
           <div class="proj-summary">
@@ -24,9 +28,8 @@
             <a href="{{proj.url}}" target="_blank" class="section-button">Check it out</a>
           </div>
         </div>
-      <!-- </div> -->
-
-    </div>
+      </div>
+    </ng-container>
 
   </div>
 

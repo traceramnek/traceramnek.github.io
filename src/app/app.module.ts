@@ -11,6 +11,7 @@ import { FooterModule } from './footer/footer.module';
 import { ProjectsModule } from './projects/projects.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedService } from './services/shared.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SharedService } from './services/shared.service';
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     HomeModule,
     NavbarModule,
     FooterModule,

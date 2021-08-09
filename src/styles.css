@@ -7,12 +7,22 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 72px;
+  font-size: 1.5em;
   font-weight: bold;
 }
+.landing-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .page-title-line {
-  font-size: 72px;
-  font-weight: bold;
+  font-size: 6vw;
+  font-weight: 500;
 }
 .page-title-line:before,
 .page-title-line:after {
@@ -22,7 +32,7 @@
   height: 2px;
   position: relative;
   vertical-align: middle;
-  width: 80px;
+  width: 8vw;
 }
 .page-title-line:before {
   right: 0.5em;
@@ -46,12 +56,10 @@
 .overlay {
   height: 100%;
   width: 100%;
-  padding-top: 4em;
-  background-color: rgba(52, 59, 66, 0.4);
+  background-color: rgba(52, 59, 66, 0.25);
 }
 .mini-section {
   font-weight: 300;
-  border-top: 1px solid ghostwhite;
   background-color: #16385f;
   color: ghostwhite;
   padding: 2em;
@@ -64,7 +72,7 @@
 }
 .section-button {
   font-size: 1.5em;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   border-radius: 50px;
   background-color: transparent;
   color: ghostwhite;
@@ -94,9 +102,7 @@
         * 100vh is the full height of the viewport. */
   height: 101vh;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
   /* Enable scrolling on the page. */
-  overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 1px;
 }
@@ -111,8 +117,44 @@
   justify-content: center;
   color: white;
 }
+.motion-container {
+  display: flex;
+  height: 100vh;
+}
+.left-motion-div,
+.right-motion-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.left-motion-div {
+  width: 100%;
+  background-color: teal;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+.right-motion-div {
+  width: 100%;
+  background-color: #a31455;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+/* DIALOG STYLES */
+.dialog-header {
+  height: 50px;
+  background-color: #195C68;
+}
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1em;
+  }
+  .page-title-line {
+    font-size: 8vw;
+  }
+}
 body {
-  font-family: 'Lato', sans-serif, 'Trebuchet MS', sans-serif;
+  font-family: 'Poppins', sans-serif, sans-serif;
 }
 .mat-dialog-container {
   padding: 0 !important;

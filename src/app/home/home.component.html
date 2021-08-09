@@ -1,35 +1,68 @@
 <div class="">
-  <div class="landing-parallax bg1 landing-parallax-section text-center">
+  <div class="landing-section text-center">
+    <!-- <div class="motion-container" id="id-motion-container" (mousemove)="adjustDivs($event)"> -->
     <div class="overlay">
       <br>
       <div class="main-text">
-        <h3>Multimedia Developer</h3>
+        <h2 style="font-weight: 200;">Multimedia Developer</h2>
         <h1 class="page-title">Kwan Holloway</h1>
       </div>
 
+      <div>
+        <button class="section-button" (click)="scrollToElem('go-to-sections')">
+          Learn More
+        </button>
+      </div>
     </div>
   </div>
 
-  <div class=" mini-section text-center">
-    <p>Hey, I'm Kwan! I write code and design things. Click below to learn more!</p>
-    <button class="section-button" (click)="goToPage('/about')">
-      About
-    </button>
+  <div style="background-color: #ab7987;">
+    <div class="mini-section row">
+      <div class="col-md-6">
+        <h4>Hey I'm Kwan! And I'm a Multimedia Developer!
+          What does that mean? Well it means that I'm a developer who works in many
+          different fields like UI/UX, Game Design and Development, Web Development, and more!</h4>
+      </div>
+      <div class="col-md-6">
+        TEmp
+      </div>
+    </div>
+    <div class="mini-section">
+      <h4>Hey I'm Kwan 2 </h4>
+    </div>
+    <div class="mini-section">
+      <h4>Hey I'm Kwan 3 </h4>
+    </div>
   </div>
 
-  <div class=" mini-section text-center">
-    <p>I've worked on some cool projects. Check them out!</p>
-    <button class="section-button" (click)="goToPage('/projects')">
-      Projects
+  <!-- <div id='go-to-sections'>
+    <div class=" mini-section text-center">
+      <div data-aos="slide-right" data-aos-once="true" data-aos-delay="150">
+        <p>Hey, I'm Kwan! I write code and design things. Click below to learn more!</p>
+        <button class="section-button" (click)="goToPage('/about')">
+          About
+        </button>
+      </div>
+    </div>
 
-    </button>
-  </div>
+    <div class="mini-section text-center">
+      <div data-aos="slide-left" data-aos-once="true">
+        <p>I've worked on some cool projects. Check them out!</p>
+        <button class="section-button" (click)="goToPage('/projects')">
+          Projects
+        </button>
+      </div>
+    </div>
 
-  <div class=" mini-section text-center">
-    <p>I also make digital art. Take a look!</p>
-    <button class="section-button" (click)="goToPage('/artwork')">
-      Artwork
-    </button>
-  </div>
+    <div class=" mini-section text-center">
+      <div data-aos="slide-right" data-aos-once="true">
+        <p>I also make digital art. Take a look!</p>
+        <button class="section-button" (click)="goToPage('/artwork')">
+          Artwork
+        </button>
+      </div>
+    </div>
+  </div> -->
+
 
 </div>
