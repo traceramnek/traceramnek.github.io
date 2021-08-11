@@ -318,8 +318,11 @@
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 15px;
+  padding: 0 10px;
 }
 .proj-item-title {
+  display: flex;
+  align-items: center;
   font-size: 5rem;
   font-weight: 500;
   margin-bottom: 15px;
@@ -366,5 +369,12 @@
     max-height: none;
     margin: 0;
     height: 400px;
+  }
+  .proj-item {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  .proj-item.proj-item-reverse {
+    flex-direction: column;
   }
 }

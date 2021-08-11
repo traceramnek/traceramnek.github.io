@@ -6,11 +6,11 @@
             "bgColor": "#904270",
             "tagColor": "#650e41",
             "imgPath": "../../assets/images/soul-source-sqr.png",
-            "summary": "Soul Source is a React web app that allows users to find and save Black and POC resources and events related to gaming and tech. Users can sign in with social media and organize their favorite resources too!",
+            "summary": "Soul Source is a React web app that allows users to find and save Black/POC resources and events related to gaming and tech. Users can sign in with social media and organize their favorite resources too!",
             "tags": ["React", "Redux", "Firebase", "UI/UX Design"]
         },
         {
-            "title": "Jammify",
+            "title": "Jammify!",
             "url": "https://jammify.surge.sh",
             "bgColor": "#a9523e",
             "tagColor": "#903409",
