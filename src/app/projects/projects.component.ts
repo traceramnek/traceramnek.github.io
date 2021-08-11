@@ -13,6 +13,7 @@ export class ProjectsComponent implements OnInit {
   artUrls = [];
   assetUrl = 'assets/json/projects.json';
   artFetchUrl = 'assets/json/artwork.json';
+  currArtProj;
 
   constructor(private sharedService: SharedService) { }
 
@@ -32,7 +33,12 @@ export class ProjectsComponent implements OnInit {
     this.sharedService.getAssetJsonArray(this.artFetchUrl).subscribe((response => {
       this.artworks = response['artwork'];
       this.artUrls = this.artworks.map(elem => elem.imgPath);
+      this.currArtProj = this.artworks[0];
     }));
+  }
+
+  updateCurrIndex(index: number) {
+    this.currArtProj = this.artworks[index];
   }
 
 }

@@ -350,6 +350,13 @@
   background-color: #333333;
   color: ghostwhite;
 }
+.art-projects {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
 @media (max-width: 480px) {
   .proj-button a {
     font-size: 1.5rem;

@@ -7,8 +7,9 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 9rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .landing-section {
   position: relative;
@@ -16,13 +17,23 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #195C68;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.landing-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 .page-title-line {
   font-size: 6vw;
   font-weight: 500;
+  text-transform: uppercase;
 }
 .page-title-line:before,
 .page-title-line:after {
@@ -35,19 +46,17 @@
   width: 8vw;
 }
 .page-title-line:before {
-  right: 0.5em;
+  right: 0.5rem;
   margin-left: -50%;
 }
 .page-title-line:after {
-  left: 0.5em;
+  left: 0.5rem;
   margin-right: -50%;
 }
 .main-text {
-  margin-top: 4em;
   color: ghostwhite;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 .main-container {
   height: 100vh;
@@ -62,17 +71,17 @@
   font-weight: 300;
   background-color: #16385f;
   color: ghostwhite;
-  padding: 2em;
+  padding: 2rem;
 }
 .mini-section button {
-  margin: 1em;
+  margin: 1rem;
 }
 .mini-section p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .section-button {
-  font-size: 1.5em;
-  padding: 0.5em 2em;
+  font-size: 2rem;
+  padding: 1rem 3rem;
   border-radius: 50px;
   background-color: transparent;
   color: ghostwhite;
@@ -147,7 +156,7 @@
 }
 @media (max-width: 480px) {
   .page-title {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .page-title-line {
     font-size: 8vw;
@@ -158,4 +167,7 @@ body {
 }
 .mat-dialog-container {
   padding: 0 !important;
+}
+.slideshow-container .arrow-container.next:before {
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2)) !important;
 }

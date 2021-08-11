@@ -2,19 +2,53 @@
     "artwork": [
         {
             "title": "Black Forever",
-            "imgPath": "../../assets/images/black_forever.svg"
+            "bgColor": "#9e3d3e",
+            "tagColor": "#7d0203",
+            "imgPath": "../../assets/images/black_forever.svg",
+            "tags": [
+                "Illustrator",
+                "Digital Illustration"
+            ]
         },
         {
             "title": "Divided Existence",
-            "imgPath": "../../assets/images/Div_Exist_Square.png"
+            "bgColor": "#196171",
+            "tagColor": "#0b4552",
+            "imgPath": "../../assets/images/Div_Exist_Square.png",
+            "tags": [
+                "Illustrator",
+                "Digital Illustration"
+            ]
+        },
+        {
+            "title": "Rizo",
+            "bgColor": "#8e3235",
+            "tagColor": "#710508",
+            "imgPath": "../../assets/images/Rizo_Idle_New.gif",
+            "tags": [
+                "Hexels 3",
+                "Pixel Artist"
+            ]
         },
         {
             "title": "Cyberpunk City",
-            "imgPath": "../../assets/images/Cyberpunk-City.png"
+            "bgColor": "#7c4992",
+            "tagColor": "#5e0c82",
+            "imgPath": "../../assets/images/Cyberpunk-City.png",
+            "tags": [
+                "Illustrator",
+                "Digital Illustration"
+            ]
         },
         {
             "title": "Nitara Zoli",
-            "imgPath": "../../assets/images/Nitara_Zoli.png"
+            "bgColor": "#cc6470",
+            "tagColor": "#9a505a",
+            "imgPath": "../../assets/images/Nitara_Zoli.png",
+            "tags": [
+                "Hexels 3",
+                "Pixel Artist"
+            ]
         }
     ]
 }
