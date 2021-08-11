@@ -5,8 +5,9 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 9rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .landing-section {
   position: relative;
@@ -14,13 +15,23 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #195C68;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.landing-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 .page-title-line {
   font-size: 6vw;
   font-weight: 500;
+  text-transform: uppercase;
 }
 .page-title-line:before,
 .page-title-line:after {
@@ -33,19 +44,17 @@
   width: 8vw;
 }
 .page-title-line:before {
-  right: 0.5em;
+  right: 0.5rem;
   margin-left: -50%;
 }
 .page-title-line:after {
-  left: 0.5em;
+  left: 0.5rem;
   margin-right: -50%;
 }
 .main-text {
-  margin-top: 4em;
   color: ghostwhite;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 .main-container {
   height: 100vh;
@@ -54,24 +63,23 @@
 .overlay {
   height: 100%;
   width: 100%;
-  padding-top: 4em;
   background-color: rgba(52, 59, 66, 0.25);
 }
 .mini-section {
   font-weight: 300;
   background-color: #16385f;
   color: ghostwhite;
-  padding: 2em;
+  padding: 2rem;
 }
 .mini-section button {
-  margin: 1em;
+  margin: 1rem;
 }
 .mini-section p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .section-button {
-  font-size: 1.5em;
-  padding: 0.5em 2em;
+  font-size: 2rem;
+  padding: 1rem 3rem;
   border-radius: 50px;
   background-color: transparent;
   color: ghostwhite;
@@ -146,7 +154,7 @@
 }
 @media (max-width: 480px) {
   .page-title {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .page-title-line {
     font-size: 8vw;
@@ -177,14 +185,14 @@
   /* Keep the image from overlapping sibling elements. */
   z-index: -1;
 }
-.bg-main::after {
+.bg-main {
   background-image: url('../../assets/images/highline_sunset.jpg');
   background-size: cover;
   background-position: center;
 }
 .proj-blurb {
   margin: 30% 15% 0 15%;
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 .proj-bottom {
   padding-bottom: 20%;
@@ -193,7 +201,7 @@
   padding-top: 20%;
 }
 .proj-title {
-  font-size: 2em;
+  font-size: 2rem;
   margin-top: 30px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -203,12 +211,12 @@
 }
 .proj-summary {
   padding: 20px 50px 50px 50px;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   line-height: 30px;
   opacity: 0.85;
 }
 .proj-button {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -229,13 +237,14 @@
   flex-direction: column;
   background-color: #282725;
   color: ghostwhite;
+  overflow-x: hidden;
 }
 .project-container .proj-div {
   color: ghostwhite;
   width: 45%;
   max-height: 450px;
   max-width: 450px;
-  margin: 1.5em 1.5em;
+  margin: 1.5em 1.5rem;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -289,21 +298,54 @@
   width: 100%;
   height: 100%;
 }
-.bg0 {
-  background: url('../../assets/images/bhive_long.png') no-repeat;
-  background-size: cover;
+.proj-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 7rem 3rem;
 }
-.bg1 {
-  background: url('../../assets/images/code_control_2.png') no-repeat;
-  background-size: cover;
+.proj-item.proj-item-reverse {
+  flex-direction: row-reverse;
 }
-.bg2 {
-  background: url('../../assets/images/CryptoFit_sqr.png') no-repeat center;
-  background-size: cover;
+.proj-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.bg3 {
-  background: url('../../assets/images/potg_long.png') no-repeat center;
-  background-size: cover;
+.proj-item-summary {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.proj-item-title {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.proj-img {
+  display: flex;
+  justify-content: center;
+}
+.proj-img img {
+  height: 350px;
+  width: 375px;
+  object-fit: cover;
+  object-position: top;
+}
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.proj-tag {
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  margin: 5px;
+  background-color: #333333;
+  color: ghostwhite;
 }
 @media (max-width: 480px) {
   .proj-button a {
@@ -314,7 +356,7 @@
   }
   .proj-summary {
     padding: 20px 30px 25px 30px;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     line-height: 30px;
     opacity: 0.85;
   }

@@ -17,7 +17,7 @@
     .parallax();
 }
 
-.bg-main::after {
+.bg-main{
     background-image: url('../../assets/images/highline_sunset.jpg');
     background-size: cover;
     background-position: center;
@@ -25,7 +25,7 @@
 
 .proj-blurb{
     margin: 30% 15% 0 15%;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .proj-bottom{
@@ -36,18 +36,18 @@
 }
 
 .proj-title{
-    font-size: 2em;
+    font-size: 2rem;
     margin-top: 30px;
     .setTransition(.5s);
 }
 .proj-summary{
     padding: 20px 50px 50px 50px;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     line-height: 30px;
     opacity: 0.85;
 }
 .proj-button{
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
     .setTransition(.5s);
 
     a{
@@ -67,13 +67,15 @@
     flex-direction: column;
     background-color: @slate-gold;
     color: @main-color;
+    // mainly to fix aos issue with transform
+    overflow-x: hidden;
     
     .proj-div{
         color: @main-color;
         width: 45%;
         max-height: 450px;
         max-width: 450px;
-        margin: 1.5em 1.5em;
+        margin: 1.5em 1.5rem;
         .setTransition(.5s);
         background-color: @overlay-color;
         display: flex;
@@ -93,7 +95,7 @@
                 opacity: 1;
                 .proj-title, .proj-description, .proj-button{
                     padding: 0;
-                    // margin-bottom: 1em;
+                    // margin-bottom: 1rem;
                 }
             }
         }
@@ -124,21 +126,66 @@
     height: 100%;
 }
 
-.bg0{
-    background: url('../../assets/images/bhive_long.png') no-repeat;
-    background-size: cover;
+
+// new styles
+
+.proj-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 7rem 3rem;
+
+    &.proj-item-reverse{
+        flex-direction: row-reverse;
+    }
 }
-.bg1{
-    background: url('../../assets/images/code_control_2.png') no-repeat;
-    background-size: cover;
+
+
+.proj-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.bg2{
-    background: url('../../assets/images/CryptoFit_sqr.png') no-repeat center;
-    background-size: cover;
+
+.proj-item-summary{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 15px;
 }
-.bg3{
-    background: url('../../assets/images/potg_long.png') no-repeat center;
-    background-size: cover;
+
+.proj-item-title{
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.proj-img{
+    display: flex;
+    justify-content: center;
+
+    img{
+        height: 350px;
+        width: 375px;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.proj-tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proj-tag{
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    margin: 5px;
+    background-color: @charcoal-color;
+    color: @main-color;
 }
 
 @media (max-width: @screen-xs) {
@@ -154,7 +201,7 @@
 
     .proj-summary{
         padding: 20px 30px 25px 30px;
-        font-size: 1.3em;
+        font-size: 1.3rem;
         line-height: 30px;
         opacity: 0.85;
     }

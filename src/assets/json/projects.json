@@ -3,32 +3,38 @@
         {
             "title": "Soul Source",
             "url": "https://soulsource.surge.sh",
+            "bgColor": "#904270",
+            "tagColor": "#650e41",
             "imgPath": "../../assets/images/soul-source-sqr.png",
-            "summary": "Soul Source is a React web app that allows users to find and save Black and POC resources and events related to gaming and tech. Users can sign in with social media and organize their favorite resources too!"
+            "summary": "Soul Source is a React web app that allows users to find and save Black and POC resources and events related to gaming and tech. Users can sign in with social media and organize their favorite resources too!",
+            "tags": ["React", "Redux", "Firebase", "UI/UX Design"]
         },
         {
             "title": "Jammify",
             "url": "https://jammify.surge.sh",
+            "bgColor": "#a9523e",
+            "tagColor": "#903409",
             "imgPath": "../../assets/images/Jammify_2.png",
-            "summary": "Jammify! is a small React web app that allows users to create playlists, name them, and add them to their Spotify accounts using the Spotify API. It's responsive for mobile devices too!"
+            "summary": "Jammify! is a small React web app that allows users to create playlists, name them, and add them to their Spotify accounts using the Spotify API. It's responsive for mobile devices too!",
+            "tags": ["React", "Spotify API", "UI/UX Design"]
         },
         {
-            "title": "B Hive",
-            "url": "https://bhive.bricartsmedia.org:8443",
-            "imgPath": "../../assets/images/bhive_sqr.png",
-            "summary": "B Hive is a web app developed for BRIC, a non-profit organization, which allows users to upload their video content to their website from anywhere and any device. This automated and sped up their proceses, allowing them to grow their brand, reach more users, and get more content on their site."
+            "title": "Safe Surfing",
+            "url": "https://bkgamedevs.itch.io/safe-surfing",
+            "bgColor": "#b77b20",
+            "tagColor": "#985f07",
+            "imgPath": "../../assets/images/safe-surfing-sqr.png",
+            "summary": "Safe Surfing is a retro style shooter where the player is protecting their computer from various viruses and malware that are trying to infect it! The player will learn about different viruses and gain abilities to keep their computer safe and secure!",
+            "tags": ["Unity", "Game Design", "Game Development", "Pixel Artist"]
         },
         {
             "title": "Code Control",
             "url": "http://rpantaev.com/CodeControl/",
+            "bgColor": "#587a86",
+            "tagColor": "#16596f",
             "imgPath": "../../assets/images/code_control_2.png",
-            "summary": "Code Control is an educational coding game meant to help intro CS students hone their coding ability. The game has been successful and has been expanded upon by future generations of students dedicated to making coding more fun and engaging to learn."
-        },
-        {
-            "title": "Path of the Gamer",
-            "url": "https://traceramnek.github.io/Path-Of-The-Gamer/",
-            "imgPath": "../../assets/images/POTG_Shot.png",
-            "summary": "Path of the Gamer is a small and simple educational wedsite about the game design process. Meant to give some insight to those who want to learn more about what it takes to make a small to medium scale video game."
+            "summary": "Code Control is an educational coding game meant to help intro CS students hone their coding ability. The game has been successful and has been expanded upon by future generations of students dedicated to making coding more fun and engaging to learn.",
+            "tags": ["Unity", "Game Design", "Game Development"]
         }
     ]
 }

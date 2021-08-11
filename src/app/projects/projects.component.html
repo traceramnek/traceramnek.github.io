@@ -1,22 +1,49 @@
-<div class="parallax-section proj-parallax bg-main text-center">
+<div class="landing-section bg-main text-center">
   <div class="overlay">
-    <div class="main-text">
-      <h3>PROJECTS</h3>
-      <h1 class="page-title-line">What I've Done</h1>
+    <div class="landing-text">
+      <div class="main-text">
+        <h2 style="font-weight: 200;">Projects</h2>
+        <h1 class="page-title-line">What I've Done</h1>
+      </div>
     </div>
+
   </div>
 </div>
 
 <div class="projects-section">
 
-
   <div class="project-container">
     <ng-container *ngFor="let proj of projects; let i = index;">
-      <div [attr.data-aos]="(i % 2 ==1) ? 'slide-left' : 'slide-right'" data-aos-once="true" class="proj-div col-md-6"
+      <div [ngStyle]="{'background-color': proj.bgColor}">
+        <div class="proj-item" [ngClass]="{'proj-item-reverse': (i % 2 == 1)}" data-aos-delay="250"
+          data-aos-easing="ease-in-out" data-aos-once="true" [attr.data-aos]="(i % 2 ==1) ? 'fade-left' : 'fade-right'">
+          <div class="col-md-6 proj-img">
+            <img src="{{proj.imgPath}}">
+          </div>
+          <div class="col-md-6 proj-details">
+            <div class="proj-item-title">
+              {{proj.title}}
+            </div>
+            <div class="proj-item-summary">
+              {{proj.summary}}
+            </div>
+
+            <h3>Skills</h3>
+            <div class="proj-tags">
+              <div class="proj-tag" [ngStyle]="{'background-color': proj.tagColor}"
+                *ngFor="let tag of proj.tags; let j = index;">
+                {{tag}}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- <div [attr.data-aos]="(i % 2 ==1) ? 'slide-left' : 'slide-right'" data-aos-once="true" class="proj-div col-md-6"
         [ngClass]="{'proj-div-right': (i % 2 == 1)}">
         <img src="{{proj.imgPath}}">
-        <!-- <div class="bg-img" [style.background]="'url(' + proj.imgPath + ')'"> -->
-        <!-- </div> -->
       </div>
       <div class="col-md-6">
         <div class="img-overlay">
@@ -28,7 +55,7 @@
             <a href="{{proj.url}}" target="_blank" class="section-button">Check it out</a>
           </div>
         </div>
-      </div>
+      </div> -->
     </ng-container>
 
   </div>

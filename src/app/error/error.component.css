@@ -5,8 +5,9 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 9rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .landing-section {
   position: relative;
@@ -14,6 +15,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #195C68;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,19 +35,17 @@
   width: 8vw;
 }
 .page-title-line:before {
-  right: 0.5em;
+  right: 0.5rem;
   margin-left: -50%;
 }
 .page-title-line:after {
-  left: 0.5em;
+  left: 0.5rem;
   margin-right: -50%;
 }
 .main-text {
-  margin-top: 4em;
   color: ghostwhite;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 .main-container {
   height: 100vh;
@@ -54,24 +54,23 @@
 .overlay {
   height: 100%;
   width: 100%;
-  padding-top: 4em;
   background-color: rgba(52, 59, 66, 0.25);
 }
 .mini-section {
   font-weight: 300;
   background-color: #16385f;
   color: ghostwhite;
-  padding: 2em;
+  padding: 2rem;
 }
 .mini-section button {
-  margin: 1em;
+  margin: 1rem;
 }
 .mini-section p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .section-button {
-  font-size: 1.5em;
-  padding: 0.5em 2em;
+  font-size: 1.5rem;
+  padding: 0.5em 2rem;
   border-radius: 50px;
   background-color: transparent;
   color: ghostwhite;
@@ -146,7 +145,7 @@
 }
 @media (max-width: 480px) {
   .page-title {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .page-title-line {
     font-size: 8vw;
@@ -156,7 +155,7 @@
   height: 101vh;
   background-color: #276175;
   color: ghostwhite;
-  padding-top: 6em;
+  padding-top: 6rem;
   display: flex;
   justify-content: center;
   background-image: url('../../assets/images/Custom_404.png');
@@ -172,15 +171,15 @@
   bottom: 10%;
 }
 .error-title {
-  font-size: 15em;
+  font-size: 15rem;
 }
 .error-message {
-  font-size: 2em;
-  margin-bottom: 1em;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 .return-button {
-  font-size: 1.5em;
-  padding: 0.5em 2em;
+  font-size: 1.5rem;
+  padding: 0.5em 2rem;
   border-radius: 50px;
   background-color: transparent;
   color: ghostwhite;
