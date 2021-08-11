@@ -62,6 +62,44 @@
       </div> -->
     </ng-container>
 
+
+    <div [ngStyle]="{'background-color': 'teal'}">
+      <div class="proj-item" data-aos-delay="250" data-aos-easing="ease-in-out" data-aos-once="true"
+        [attr.data-aos]="(i % 2 ==1) ? 'fade-left' : 'fade-right'">
+        <div class="col-md-6 proj-img">
+          <slideshow style="width: 100%;" [minHeight]="'350px'" [imageUrls]="artUrls">
+          </slideshow>
+        </div>
+        <div class="col-md-6 proj-details">
+          <div class="proj-item-title">
+            Art Projects
+            <i style="font-size: 2.5rem; margin-left: 15px; margin-top: 5px;" class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="proj-item-summary">
+            A showcase of some fo the various artwork I’ve made over the years. 
+            I’ve done digital illustration and pixel art for various projects 
+            using programs like Illustrator, Pixaki and more!
+          </div>
+          <!-- <div class="proj-button">
+              <a href="{{proj.url}}" target="_blank" class="section-button">Check it out</a>
+            </div> -->
+
+          <h3>Skills</h3>
+          <div class="proj-tags">
+            <!-- <div class="proj-tag" [ngStyle]="{'background-color': proj.tagColor}"
+              *ngFor="let tag of proj.tags; let j = index;">
+              {{tag}}
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <ng-container *ngFor="let proj of projects; let i = index;"> -->
+
+    <!-- </ng-container> -->
+
+
   </div>
 
   <!-- <div class="proj-div" *ngFor="let proj of projects; let i = index;">
