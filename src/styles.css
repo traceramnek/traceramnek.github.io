@@ -168,6 +168,7 @@ body {
 .mat-dialog-container {
   padding: 0 !important;
 }
-.slideshow-container .arrow-container.next:before {
+.slideshow-container .arrow-container.next:before,
+.slideshow-container .arrow-container.prev:before {
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2)) !important;
 }

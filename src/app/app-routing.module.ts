@@ -16,10 +16,10 @@ const routes: Routes = [
     path: 'projects',
     loadChildren: 'app/projects/projects.module#ProjectsModule',
   },
-  {
-    path: 'artwork',
-    loadChildren: 'app/artwork/artwork.module#ArtworkModule',
-  },
+  // {
+  //   path: 'artwork',
+  //   loadChildren: 'app/artwork/artwork.module#ArtworkModule',
+  // },
   {
     path: 'error',
     loadChildren: 'app/error/error.module#ErrorModule'

@@ -67,7 +67,7 @@
         <div class="proj-item" data-aos-delay="250" data-aos-easing="ease-in-out" data-aos-once="true"
           [attr.data-aos]="(i % 2 ==1) ? 'fade-left' : 'fade-right'">
           <div class="col-md-6 proj-img">
-            <slideshow style="width: 100%;" [minHeight]="'475px'" [imageUrls]="artUrls" [arrowSize]="'15px'"
+            <slideshow class="art-slideshow" [imageUrls]="artUrls" [arrowSize]="'15px'"
               (onIndexChanged)="updateCurrIndex($event)">
             </slideshow>
           </div>
