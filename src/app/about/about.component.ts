@@ -11,7 +11,7 @@ import * as $ from 'jquery';
       state('inactive', style({
         height: '0',
         opacity: '0',
-        padding: '0 15%',
+        // padding: '0 15%',
         display: 'none'
       })),
       state('active', style({
@@ -26,7 +26,8 @@ import * as $ from 'jquery';
 })
 export class AboutComponent implements OnInit {
   navigationSubState = {
-    interests: 'active',
+    about: "active",
+    interests: 'inactive',
     motivations: 'inactive',
     facts: 'inactive'
   };

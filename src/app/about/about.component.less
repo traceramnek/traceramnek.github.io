@@ -50,7 +50,7 @@
     min-height: 400px;
 }
 
-.about-section{
+.about-section-old{
     text-align: left;
     z-index: -1;
     background-color: @brick-color;
@@ -89,11 +89,66 @@
     }
 }
 
-.bg1::after {
+.bg1 {
     background-image: url('../../assets/images/brick_light.jpg');
     background-size: cover;
     background-position: center;
 }
+
+//new styles
+
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 4rem 3rem;
+}
+
+.about-bio{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about-img{
+    display: flex;
+    justify-content: center;
+
+    img{
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.about-details{
+    position: absolute;
+}
+
+.about-buttons{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    z-index: 2;
+}
+
+.about-toggle{
+    font-size: 2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+
+    .setTransition(.25s);
+
+    &.selected{
+        color: @gold-color;
+    }
+}
+
 
 @media (max-width: @screen-xs) {
     .bio-container{
