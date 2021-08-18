@@ -9,15 +9,19 @@ import * as $ from 'jquery';
   animations: [
     trigger('showSection', [
       state('inactive', style({
+        // position: 'absolute',
         height: '0',
         opacity: '0',
         // padding: '0 15%',
-        display: 'none'
+        display: 'none',
+        // transform: 'translateX(600px)'
       })),
       state('active', style({
+        // position: 'relative',
         height: '*',
         opacity: '1',
-        padding: '*',
+        // padding: '*',
+        // transform: 'translateX(0px)'
       })),
       transition('inactive => active', animate('350ms 350ms ease-in')),
       transition('active => inactive', animate('350ms ease-out'))

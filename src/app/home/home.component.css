@@ -19,6 +19,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .landing-text {
   display: flex;
@@ -242,7 +243,7 @@
   color: #16385f;
 }
 .bg1 {
-  background-image: url('../../assets/images/kwan_la_sqr.jpg');
+  background-image: url('../../assets/images/graffiti-moon.jpg');
   background-size: cover;
   background-position: bottom;
 }

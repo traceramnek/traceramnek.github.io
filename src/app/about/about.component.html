@@ -9,16 +9,21 @@
   </div>
 </div>
 
-<div class="about-buttons">
-  <div class="about-toggle" [ngClass]="{'selected': navigationSubState.about === 'active'}"
-    (click)="toggleActiveStates('about', $event)"> About </div>
-  <div class="about-toggle" [ngClass]="{'selected': navigationSubState.interests === 'active'}"
-    (click)="toggleActiveStates('interests', $event)"> Interests </div>
-  <div class="about-toggle" [ngClass]="{'selected': navigationSubState.motivations === 'active'}"
-    (click)="toggleActiveStates('motivations', $event)"> Motivations </div>
-  <div class="about-toggle" [ngClass]="{'selected': navigationSubState.facts === 'active'}"
-    (click)="toggleActiveStates('facts', $event)"> Fun Facts </div>
+<div>
+  <div class="about-button-container ">
+    <div class="about-buttons">
+      <div class="about-toggle" [ngClass]="{'selected': navigationSubState.about === 'active'}"
+        (click)="toggleActiveStates('about', $event)"> About </div>
+      <div class="about-toggle" [ngClass]="{'selected': navigationSubState.interests === 'active'}"
+        (click)="toggleActiveStates('interests', $event)"> Interests </div>
+      <div class="about-toggle" [ngClass]="{'selected': navigationSubState.motivations === 'active'}"
+        (click)="toggleActiveStates('motivations', $event)"> Motivations </div>
+      <div class="about-toggle" [ngClass]="{'selected': navigationSubState.facts === 'active'}"
+        (click)="toggleActiveStates('facts', $event)"> Fun Facts </div>
+    </div>
+  </div>
 </div>
+
 
 <!-- <div class="bio text-center main-about">
   <h2>What do I do?</h2>
@@ -39,12 +44,13 @@
   </div>
 </div> -->
 
-<div class="about-section" data-aos-easing="ease-in-out" data-aos-once="true">
+<div class="about-section">
   <div class="col-md-6 about-img">
     <img src="../../assets/images/kwan_la_sqr.jpg">
   </div>
   <div class="col-md-6 about-bio">
-    <div class="about-details" id="about" [@showSection]="navigationSubState.about">
+    <div data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true" class="about-details" id="about"
+      [@showSection]="navigationSubState.about">
       <h2>About Me</h2>
       <br>
       <p>I'm Kwan and I'm a Multimedia Developer!</p>
@@ -54,7 +60,8 @@
       <p>I love to bridge the gap between UX and development, and enjoy problem solving through design.</p>
     </div>
 
-    <div class="about-details" id="interests" [@showSection]="navigationSubState.interests">
+    <div data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true" class="about-details" id="interests"
+      [@showSection]="navigationSubState.interests">
       <h2>What interests me?</h2>
       <br>
       <p>Games. That's it. Bye.</p>
@@ -63,7 +70,8 @@
       <p>I also love philosophy, psychology, and memes.</p>
     </div>
 
-    <div class="about-details" id="motivations" [@showSection]="navigationSubState.motivations">
+    <div data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true" class="about-details" id="motivations"
+      [@showSection]="navigationSubState.motivations">
       <h2>What motivates me?</h2>
       <br>
       <p>
@@ -77,15 +85,10 @@
         create more media through new, lesser spoken lenses.
       </p>
 
-      <!-- <p>
-        And I can't forget that I want to have a fun and interesting life. I want to be creative, design
-        cool sites,
-        make fun games, and enjoy what life has to offer.
-      </p> -->
-
     </div>
 
-    <div class="about-details" id="facts" [@showSection]="navigationSubState.facts">
+    <div class="about-details" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-once="true" id="facts"
+      [@showSection]="navigationSubState.facts">
       <h2>Fun Facts?</h2>
       <br>
       <p>I've taught myself to be fairly ambidextrous. I love Sherlock Holmes.</p>
@@ -95,50 +98,3 @@
     </div>
   </div>
 </div>
-
-<!-- <div class="about-section-container"> -->
-<!-- <div id="interests" [@showSection]="navigationSubState.interests">
-  <h2>What interests me?</h2>
-  <br>
-  <p>Games. That's it. Bye.</p>
-  <p>Ok no, but I am in love with video games and find myself constantly playing them.</p>
-  <p>I'm into creating art digital art in various forms, pixel based or vector based on most occasions.</p>
-  <p>I also love philosophy, psychology, and memes.</p>
-</div>
-
-<div id="motivations" [@showSection]="navigationSubState.motivations">
-  <h2>What drives me?</h2>
-  <br>
-  <p>
-    I'm driven by a yearning to impact other's lives, whether it be by
-    providing a solution to a problem via a web app, or speaking
-    on a panel about my expereince.
-  </p>
-  <p>
-    I'm also motivated by representation. The vast majority of media is portrayed through a certain lens, and it's my
-    goal to
-    create more media through new, lesser spoken lenses.
-  </p>
-
-  <p>
-    And I can't forget that I want to have a fun and interesting life. I want to be creative, design
-    cool sites,
-    make fun games, and enjoy what life has to offer.
-  </p>
-
-</div>
-
-<div id="facts" [@showSection]="navigationSubState.facts">
-  <h2>Fun Facts?</h2>
-  <br>
-  <p>I've taught myself to be fairly ambidextrous. I love Sherlock Holmes.</p>
-  <p>I listen to a lot of music in other languages.
-    I write ciphers in order to decode them later.
-  </p>
-</div> -->
-<!-- </div> -->
-
-
-
-<!-- <div class="bio text-center about-section footer">
-</div> -->
