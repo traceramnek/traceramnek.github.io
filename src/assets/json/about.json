@@ -1,0 +1,24 @@
+{
+    "about": [
+        {
+            "title": "About Me",
+            "summary": "I'm Kwan and I'm a Multimedia Developer! \n \n As a Multimedia Developer, I have experience in UI Design/Development, Game Design/Development, creating Digital Art, and more. It's a passion of mine to be creative and that shines through the work I do.",
+            "imgPath": "../../assets/images/soul-source-sqr.png"
+        },
+        {
+            "title": "What interests me?",
+            "summary": "I'm intetested in art, gaming, interface design, and more. I enjoy bridging the gap between UX and development, and enjoy problem solving through design whether it's figuring out how to make an application more intuitive for mobile users or deciding which platform layout provides the best challenge for players.",
+            "imgPath": "../../assets/images/soul-source-sqr.png"
+        },
+        {
+            "title": "What motivates me?",
+            "summary": "I'm driven by a yearning to impact other's lives, whether it be by providing a solution to a problem via a web app, or speaking on a panel about my expereince. \n\n I'm also motivated by representation. The vast majority of media is portrayed through a certain lens, and it's my goal to create more media through new, lesser spoken lenses.",
+            "imgPath": "../../assets/images/soul-source-sqr.png"
+        },
+        {
+            "title": "Fun Facts?",
+            "summary": " I am in love with video games and find myself constantly playing them. \n\n I'm into creating art digital art in various forms, pixel based or vector based on most occasions. \n\n I also love philosophy, psychology, and memes.",
+            "imgPath": "../../assets/images/soul-source-sqr.png"
+        }
+    ]
+}

@@ -83,8 +83,19 @@
     opacity: 0;
     position: absolute;
     text-align: center;
-    width: 100%;
+    width: 375px;
     height: 100%;
+
+    //new styles
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(56,56,56, 0.7);
+
+    &:hover{
+        opacity: 1;
+    }
 }
 
 
@@ -212,6 +223,9 @@
             width: 300px;
             height: 275px;
         }
+    }
+    .img-overlay{
+        width: 300px;
     }
     
     .art-slideshow{

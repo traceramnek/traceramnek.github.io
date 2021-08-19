@@ -17,12 +17,19 @@
         <div class="proj-item" [ngClass]="{'proj-item-reverse': (i % 2 == 1)}" data-aos-delay="250"
           data-aos-easing="ease-in-out" data-aos-once="true" [attr.data-aos]="(i % 2 ==1) ? 'fade-left' : 'fade-right'">
           <div class="col-md-6 proj-img">
-            <img src="{{proj.imgPath}}">
+            <!-- <a href="{{proj.url}}" target="_blank"> -->
+              <img src="{{proj.imgPath}}">
+              <div class="img-overlay">
+                <div class="proj-button">
+                  <a href="{{proj.url}}" target="_blank" class="section-button">Check it out</a>
+                </div>
+              </div>
+            <!-- </a> -->
           </div>
           <div class="col-md-6 proj-details">
             <div class="proj-item-title">
               {{proj.title}}
-              <i style="font-size: 2.5rem; margin-left: 15px; margin-top: 5px;" class="fas fa-external-link-alt"></i>
+              <!-- <i style="font-size: 2.5rem; margin-left: 15px; margin-top: 5px;" class="fas fa-external-link-alt"></i> -->
             </div>
             <div class="proj-item-summary">
               {{proj.summary}}

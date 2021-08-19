@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   }
 
   goToPage(route: string) {
+    // window.scroll(0,0);
     this.sharedService.navigateToUrl(route);
   }
 
@@ -27,6 +28,9 @@ export class HomeComponent implements OnInit {
     let motionDiv = document.getElementById('id-motion-container');
     let leftDiv = document.getElementById('id-left-div');
     let rightDiv = document.getElementById('id-right-div');
+
+    leftDiv.style.transition = '0s';
+    rightDiv.style.transition = '0s';
 
     leftDiv.style.width = 'calc(100% - ' + event.clientX + 'px';
     leftDiv.style.fontSize = (event.clientX / motionDiv.clientWidth) * 100 + 300 + '%';
@@ -41,6 +45,16 @@ export class HomeComponent implements OnInit {
       leftDiv.style.zIndex = '1';
     }
 
+  }
+
+  resetDivs(){
+    let leftDiv = document.getElementById('id-left-div');
+    let rightDiv = document.getElementById('id-right-div');
+
+    leftDiv.style.transition = '.25s';
+    rightDiv.style.transition = '.25s';
+    leftDiv.style.width = '100%';
+    rightDiv.style.width = '100%';
   }
 
 }

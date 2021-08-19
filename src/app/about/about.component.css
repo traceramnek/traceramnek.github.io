@@ -249,9 +249,9 @@
   color: #902a2a;
 }
 .bg1 {
-  background-image: url('../../assets/images/brick_light.jpg');
+  background-image: url('../../assets/images/graffiti-moon.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 .about-section {
   display: flex;
@@ -271,12 +271,14 @@
 .about-img {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 .about-img img {
-  height: 350px;
-  width: 350px;
+  height: 275px;
+  width: 275px;
   object-fit: cover;
   object-position: top;
+  border-radius: 50%;
 }
 .about-button-container {
   position: absolute;
@@ -299,6 +301,45 @@
 }
 .about-toggle.selected {
   color: #bd7407;
+}
+.left-about {
+  min-height: 45vh;
+  width: 50%;
+  background-color: #195C68;
+  padding: 0;
+}
+.left-inner-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  border-right: solid 4px #bd7407;
+}
+.left-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ghostwhite;
+  width: 100%;
+  overflow-x: hidden;
+}
+.left-inner:after {
+  background-color: #bd7407;
+  content: "";
+  display: inline-block;
+  height: 4px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  left: 0.5rem;
+  margin-right: -50%;
+}
+.right-about {
+  min-height: 45vh;
+  padding: 3rem;
+  font-size: 2rem;
+  background-color: ghostwhite;
+  border-bottom: 4px solid #bd7407;
+  white-space: pre-line;
 }
 @media (max-width: 480px) {
   .bio-container {
@@ -325,5 +366,25 @@
   }
   .about-button-container {
     position: relative;
+  }
+  .left-about {
+    width: 100%;
+  }
+  .left-inner-container {
+    border: 4px solid #bd7407;
+  }
+  .left-inner:before {
+    background-color: #bd7407;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    right: 0.5rem;
+    margin-left: -50%;
+  }
+  .right-about {
+    border: none;
   }
 }

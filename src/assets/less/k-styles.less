@@ -135,37 +135,50 @@
 
 .motion-container{
     display: flex;
-    height: 100vh;
+    height: 75vh;
 }
 
 .left-motion-div, .right-motion-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
-    // width: 50%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+
+.left-motion-inner, .right-motion-inner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .left-motion-div{
-    // background-image: url('../../assets/images/DividedExt2.png');
-    // background-size: cover;
-    // background-repeat: no-repeat;
+    background-image: url('../../assets/images/kwan_la_sqr.jpg');
 
-    width: 100%;
     background-color: teal;
-    justify-content: flex-start;
+}
+
+.left-motion-inner{
+    justify-content: center;
     padding-left: 30px;
+
 }
 
 .right-motion-div{
-    // background-image: url('../../assets/images/bhive_sqr.png');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-
-    width: 100%;
+    background-image: url('../../assets/images/Jammify_2.png');
     background-color: #a31455;
-    justify-content: flex-end;
+}
+
+.right-motion-inner{
+    justify-content: center;
     padding-right: 30px;
+
 }
 
 // new styles aug 2021
@@ -192,9 +205,14 @@
 }
 @media (max-width: @screen-xs) {
     .page-title{
-        font-size: 1rem;
+        font-size: 4rem;
     }
     .page-title-line{
         font-size: 8vw;
+    }
+
+    .left-motion-inner, .right-motion-inner{
+        justify-content: center;
+        padding: 0;
     }
 }

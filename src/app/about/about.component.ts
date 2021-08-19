@@ -1,6 +1,7 @@
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { SharedService } from '../services/shared.service';
 
 @Component({
   selector: 'app-about',
@@ -36,9 +37,19 @@ export class AboutComponent implements OnInit {
     facts: 'inactive'
   };
 
-  constructor() { }
+  aboutDetails = [];
+  aboutUrl = 'assets/json/about.json';
+
+  constructor(public sharedService: SharedService) { }
 
   ngOnInit() {
+    this.getAboutDetails();
+  }
+
+  getAboutDetails() {
+    this.sharedService.getAssetJsonArray(this.aboutUrl).subscribe((response => {
+      this.aboutDetails = response['about'];
+    }));
 
   }
 

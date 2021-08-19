@@ -9,7 +9,25 @@
   </div>
 </div>
 
-<div>
+<div style="display: flex; flex-wrap: wrap; overflow-x: hidden;">
+  <ng-container *ngFor="let about of aboutDetails; let i = index;">
+    <div class="col-md-6 left-about" [ngClass]="{'odd': i % 2 != 0}">
+      <div class="left-inner-container">
+        <div class="left-inner">
+          <div *ngIf="i == 0" class="about-img" data-aos="fade-right">
+            <img src="../../assets/images/kwan_profile.jpg">
+          </div>
+          <h2 *ngIf="i != 0" data-aos="fade-right">{{about.title}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 right-about" [ngClass]="{'odd': i % 2 != 0}">
+      <div data-aos="fade-left">{{about.summary}}</div>
+    </div>
+  </ng-container>
+</div>
+
+<!-- <div>
   <div class="about-button-container ">
     <div class="about-buttons">
       <div class="about-toggle" [ngClass]="{'selected': navigationSubState.about === 'active'}"
@@ -23,26 +41,6 @@
     </div>
   </div>
 </div>
-
-
-<!-- <div class="bio text-center main-about">
-  <h2>What do I do?</h2>
-  <br> I'm Kwan S. Holloway and I'm a Multimedia Developer!
-  <p>What is that, you ask? Well I write code, design interfaces, create digital art, and much more.</p>
-  <p>I'm a multifaceted person who works on projects ranging from websites, to games, to UX/UI Design.</p>
-  <div class="more-section-list">
-    <div class="section-button" (click)="toggleActiveStates('interests', $event)">
-      Interests
-    </div>
-    <div class="section-button" (click)="toggleActiveStates('motivations', $event)">
-      Motivations
-    </div>
-    <div class="section-button" (click)="toggleActiveStates('facts', $event)">
-      Fun Facts
-    </div>
-
-  </div>
-</div> -->
 
 <div class="about-section">
   <div class="col-md-6 about-img">
@@ -97,4 +95,4 @@
       </p>
     </div>
   </div>
-</div>
+</div> -->

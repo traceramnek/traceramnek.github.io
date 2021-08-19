@@ -1,24 +1,33 @@
 <div class="">
   <div class="landing-section bg1 text-center">
-    <!-- <div class="motion-container" id="id-motion-container" (mousemove)="adjustDivs($event)"> -->
     <div class="overlay">
       <div class="landing-text">
         <div class="main-text">
           <h2 style="font-weight: 200;">Multimedia Developer</h2>
           <h1 class="page-title">Kwan Holloway</h1>
         </div>
-
-        <div>
-          <button class="section-button" (click)="scrollToElem('go-to-sections')">
-            Learn More
-          </button>
-        </div>
       </div>
 
     </div>
   </div>
+  <div class="motion-container" id="id-motion-container" (mousemove)="adjustDivs($event)" (mouseleave)="resetDivs()">
+    <div class="left-motion-div" id="id-left-div">
+      <div class="overlay" (click)="goToPage('/about')">
+        <div class="left-motion-inner">
+          <h1>About</h1>
+        </div>
+      </div>
+    </div>
+    <div class="right-motion-div" id="id-right-div">
+      <div class="overlay" (click)="goToPage('/projects')">
+        <div class="right-motion-inner">
+          <h1>Projects</h1>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div style="background-color: #ab7987;">
+  <!-- <div style="background-color: #ab7987;">
     <div class="mini-section row">
       <div class="col-md-6">
         <h4>Hey I'm Kwan! And I'm a Multimedia Developer!
@@ -35,7 +44,7 @@
     <div class="mini-section">
       <h4>Hey I'm Kwan 3 </h4>
     </div>
-  </div>
+  </div> -->
 
   <!-- <div id='go-to-sections'>
     <div class=" mini-section text-center">
