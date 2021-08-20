@@ -28,11 +28,13 @@ export class HomeComponent implements OnInit {
     let motionDiv = document.getElementById('id-motion-container');
     let leftDiv = document.getElementById('id-left-div');
     let rightDiv = document.getElementById('id-right-div');
+    // let aboutSub = document.getElementById('about-sub-title');
 
     leftDiv.style.transition = '0s';
     rightDiv.style.transition = '0s';
 
     leftDiv.style.width = 'calc(100% - ' + event.clientX + 'px';
+    // aboutSub.style.opacity = 'calc(100% - ' + event.clientX / 10 + '%';
     leftDiv.style.fontSize = (event.clientX / motionDiv.clientWidth) * 100 + 300 + '%';
     rightDiv.style.width = event.clientX + 'px';
     rightDiv.style.fontSize = ((motionDiv.clientWidth - event.clientX) / motionDiv.clientWidth) * 100 + 300 + '%';
