@@ -187,7 +187,7 @@
 .proj-landing {
   background-image: url('../../assets/images/kwan_la_sqr.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .proj-parallax::after {
   /* Display and position the pseudo-element */

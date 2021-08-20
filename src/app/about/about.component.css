@@ -126,25 +126,41 @@
 }
 .motion-container {
   display: flex;
-  height: 100vh;
+  height: 75vh;
 }
 .left-motion-div,
 .right-motion-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.left-motion-div:hover,
+.right-motion-div:hover {
+  cursor: pointer;
+}
+.left-motion-inner,
+.right-motion-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .left-motion-div {
-  width: 100%;
+  background-image: url('../../assets/images/graffiti-moon.jpg');
   background-color: teal;
-  justify-content: flex-start;
+}
+.left-motion-inner {
+  justify-content: center;
   padding-left: 30px;
 }
 .right-motion-div {
-  width: 100%;
+  background-image: url('../../assets/images/kwan_la_sqr.jpg');
   background-color: #a31455;
-  justify-content: flex-end;
+}
+.right-motion-inner {
+  justify-content: center;
   padding-right: 30px;
 }
 /* DIALOG STYLES */
@@ -154,10 +170,15 @@
 }
 @media (max-width: 480px) {
   .page-title {
-    font-size: 1rem;
+    font-size: 4rem;
   }
   .page-title-line {
     font-size: 8vw;
+  }
+  .left-motion-inner,
+  .right-motion-inner {
+    justify-content: center;
+    padding: 0;
   }
 }
 .bio-pic {
@@ -305,14 +326,14 @@
 .left-about {
   min-height: 45vh;
   width: 50%;
-  background-color: #195C68;
+  background-color: #69809e;
   padding: 0;
 }
 .left-inner-container {
   display: flex;
   justify-content: center;
   height: 100%;
-  border-right: solid 4px #bd7407;
+  border-right: solid 4px #d79a4a;
 }
 .left-inner {
   display: flex;
@@ -323,7 +344,7 @@
   overflow-x: hidden;
 }
 .left-inner:after {
-  background-color: #bd7407;
+  background-color: #d79a4a;
   content: "";
   display: inline-block;
   height: 4px;
@@ -337,8 +358,9 @@
   min-height: 45vh;
   padding: 3rem;
   font-size: 2rem;
-  background-color: ghostwhite;
-  border-bottom: 4px solid #bd7407;
+  color: ghostwhite;
+  background-color: #69809e;
+  border-bottom: 4px solid #d79a4a;
   white-space: pre-line;
 }
 @media (max-width: 480px) {
@@ -371,10 +393,10 @@
     width: 100%;
   }
   .left-inner-container {
-    border: 4px solid #bd7407;
+    border: 4px solid #d79a4a;
   }
   .left-inner:before {
-    background-color: #bd7407;
+    background-color: #d79a4a;
     content: "";
     display: inline-block;
     height: 4px;
