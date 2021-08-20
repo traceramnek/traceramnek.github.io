@@ -5,12 +5,33 @@
 	to the hover state of the apecified element
 */
 .page-title {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.landing-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #195C68;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.landing-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 .page-title-line {
   font-size: 6vw;
-  font-weight: bold;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .page-title-line:before,
 .page-title-line:after {
@@ -23,19 +44,17 @@
   width: 8vw;
 }
 .page-title-line:before {
-  right: 0.5em;
+  right: 0.5rem;
   margin-left: -50%;
 }
 .page-title-line:after {
-  left: 0.5em;
+  left: 0.5rem;
   margin-right: -50%;
 }
 .main-text {
-  margin-top: 4em;
   color: ghostwhite;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 .main-container {
   height: 100vh;
@@ -44,24 +63,23 @@
 .overlay {
   height: 100%;
   width: 100%;
-  padding-top: 4em;
-  background-color: rgba(52, 59, 66, 0.4);
+  background-color: rgba(52, 59, 66, 0.25);
 }
 .mini-section {
   font-weight: 300;
   background-color: #16385f;
   color: ghostwhite;
-  padding: 2em;
+  padding: 2rem;
 }
 .mini-section button {
-  margin: 1em;
+  margin: 1rem;
 }
 .mini-section p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .section-button {
-  font-size: 1.5em;
-  padding: .5em 2em;
+  font-size: 2rem;
+  padding: 1rem 3rem;
   border-radius: 50px;
   background-color: transparent;
   color: ghostwhite;
@@ -91,9 +109,7 @@
         * 100vh is the full height of the viewport. */
   height: 101vh;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
   /* Enable scrolling on the page. */
-  overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 1px;
 }
@@ -108,6 +124,45 @@
   justify-content: center;
   color: white;
 }
+.motion-container {
+  display: flex;
+  height: 75vh;
+}
+.left-motion-div,
+.right-motion-div {
+  color: white;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.left-motion-div:hover,
+.right-motion-div:hover {
+  cursor: pointer;
+}
+.left-motion-inner,
+.right-motion-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.left-motion-div {
+  background-image: url('../../assets/images/graffiti-moon.jpg');
+  background-color: teal;
+}
+.left-motion-inner {
+  justify-content: center;
+  padding-left: 30px;
+}
+.right-motion-div {
+  background-image: url('../../assets/images/kwan_la_sqr.jpg');
+  background-color: #a31455;
+}
+.right-motion-inner {
+  justify-content: center;
+  padding-right: 30px;
+}
 /* DIALOG STYLES */
 .dialog-header {
   height: 50px;
@@ -115,9 +170,14 @@
 }
 @media (max-width: 480px) {
   .page-title {
-    font-size: 1em;
+    font-size: 4rem;
   }
   .page-title-line {
     font-size: 8vw;
+  }
+  .left-motion-inner,
+  .right-motion-inner {
+    justify-content: center;
+    padding: 0;
   }
 }

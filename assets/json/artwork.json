@@ -1,20 +1,104 @@
 {
     "artwork": [
         {
+            "title": "Voice of the Forest",
+            "bgColor": "#25927c",
+            "tagColor": "#176958",
+            "imgPath": "../../assets/images/Blacktober_101220.png",
+            "tags": [
+                "Procreate",
+                "Digital Illustration"
+            ]
+        },
+        {
+            "title": "Meddling Spirits",
+            "bgColor": "#8290a1",
+            "tagColor": "#636d7b",
+            "imgPath": "../../assets/images/Blacktober_10920.png",
+            "tags": [
+                "Procreate",
+                "Digital Illustration"
+            ]
+        },
+        {
+            "title": "Dream Dive",
+            "bgColor": "#bf5b97",
+            "tagColor": "#92386d",
+            "imgPath": "../../assets/images/Blacktober_102220.png",
+            "tags": [
+                "Pixaki",
+                "Pixel Art"
+            ]
+        },
+        {
+            "title": "Nyxubus",
+            "bgColor": "#864148",
+            "tagColor": "#9a505a",
+            "imgPath": "../../assets/images/Blacktober_101320.png",
+            "tags": [
+                "Procreate",
+                "Digital Illustration"
+            ]
+        },
+        {
+            "title": "Murmurs",
+            "bgColor": "#37a7b5",
+            "tagColor": "#058a9a",
+            "imgPath": "../../assets/images/Blacktober_103020.png",
+            "tags": [
+                "Pixaki",
+                "Pixel Art"
+            ]
+        },
+        {
+            "title": "Crown Jewel",
+            "bgColor": "#95813b",
+            "tagColor": "#826810",
+            "imgPath": "../../assets/images/Blacktober_101820.png",
+            "tags": [
+                "Procreate",
+                "Digital Illustration"
+            ]
+        },
+        {
             "title": "Black Forever",
-            "imgPath": "../../assets/images/black_forever.svg"
+            "bgColor": "#9e3d3e",
+            "tagColor": "#7d0203",
+            "imgPath": "../../assets/images/black_forever.svg",
+            "tags": [
+                "Illustrator",
+                "Digital Illustration"
+            ]
         },
         {
             "title": "Divided Existence",
-            "imgPath": "../../assets/images/Div_Exist_Square.png"
+            "bgColor": "#196171",
+            "tagColor": "#0b4552",
+            "imgPath": "../../assets/images/Div_Exist_Square.png",
+            "tags": [
+                "Illustrator",
+                "Digital Illustration"
+            ]
         },
         {
             "title": "Cyberpunk City",
-            "imgPath": "../../assets/images/Cyberpunk-City.png"
+            "bgColor": "#7c4992",
+            "tagColor": "#5e0c82",
+            "imgPath": "../../assets/images/Cyberpunk-City.png",
+            "tags": [
+                "Illustrator",
+                "Digital Illustration"
+            ]
         },
         {
             "title": "Nitara Zoli",
-            "imgPath": "../../assets/images/Nitara_Zoli.png"
+            "bgColor": "#cc6470",
+            "tagColor": "#9a505a",
+            "imgPath": "../../assets/images/Nitara_Zoli.png",
+            "tags": [
+                "Hexels 3",
+                "Pixel Art"
+            ]
         }
     ]
 }
