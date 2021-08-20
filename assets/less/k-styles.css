@@ -149,7 +149,7 @@
 }
 .left-motion-div {
   background-image: url('../../assets/images/graffiti-moon.jpg');
-  background-color: teal;
+  background-position: bottom;
 }
 .left-motion-inner {
   justify-content: center;
