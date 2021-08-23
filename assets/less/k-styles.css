@@ -153,14 +153,12 @@
 }
 .left-motion-inner {
   justify-content: center;
-  padding-left: 30px;
 }
 .right-motion-div {
   background-image: url('../../assets/images/kwan_la_sqr.jpg');
 }
 .right-motion-inner {
   justify-content: center;
-  padding-right: 30px;
 }
 /* DIALOG STYLES */
 .dialog-header {
@@ -173,10 +171,5 @@
   }
   .page-title-line {
     font-size: 8vw;
-  }
-  .left-motion-inner,
-  .right-motion-inner {
-    justify-content: center;
-    padding: 0;
   }
 }
